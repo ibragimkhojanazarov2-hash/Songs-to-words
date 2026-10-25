@@ -1,0 +1,54 @@
+{
+ "songs": [
+  {
+   "id": "my-fair-lady",
+   "title": "My Fair Lady",
+   "artist": "David Byrne",
+   "audio": "songs/my-fair-lady.mp3",
+   "lyrics": "songs/my-fair-lady.json",
+   "license": "Creative Commons Sampling Plus 1.0 (noncommercial)",
+   "licenseUrl": "https://creativecommons.org/licenses/nc-sampling+/1.0/",
+   "source": "https://archive.org/details/The_WIRED_CD_Rip_Sample_Mash_Share-2769"
+  },
+  {
+   "id": "revenge",
+   "title": "Revenge!",
+   "artist": "Spoon",
+   "audio": "songs/revenge.mp3",
+   "lyrics": "songs/revenge.json",
+   "license": "Creative Commons Sampling Plus 1.0 (noncommercial)",
+   "licenseUrl": "https://creativecommons.org/licenses/nc-sampling+/1.0/",
+   "source": "https://archive.org/details/The_WIRED_CD_Rip_Sample_Mash_Share-2769"
+  },
+  {
+   "id": "the-voices",
+   "title": "The Voices",
+   "artist": "Josh Woodward",
+   "audio": "songs/the-voices.mp3",
+   "lyrics": "songs/the-voices.json",
+   "license": "Creative Commons Attribution 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://archive.org/details/pandacd-1144-breadcrumbs"
+  },
+  {
+   "id": "20-20",
+   "title": "20/20",
+   "artist": "Josh Woodward",
+   "audio": "songs/20-20.mp3",
+   "lyrics": "songs/20-20.json",
+   "license": "Creative Commons Attribution 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://archive.org/details/pandacd-1144-breadcrumbs"
+  },
+  {
+   "id": "bad-sign",
+   "title": "Bad Sign",
+   "artist": "Brad Sucks",
+   "audio": "songs/bad-sign.mp3",
+   "lyrics": "songs/bad-sign.json",
+   "license": "Creative Commons Attribution-ShareAlike 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://archive.org/details/Out_Of_It-3406"
+  }
+ ]
+}

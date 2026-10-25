@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Song English — Songs &amp; Lyrics</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 55%, #7c3aed 100%);
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 640px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px 24px 24px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    color: #1e1b4b;
+  }
+  .subtitle {
+    margin: 0 0 18px;
+    color: #6b7280;
+    font-size: .95rem;
+  }
+
+  .song-title {
+    font-size: .85rem;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 8px;
+  }
+  .songs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .song {
+    flex: 1 1 220px;
+    text-align: left;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    background: #fff;
+    cursor: pointer;
+    transition: all .15s;
+    font: inherit;
+  }
+  .song:hover { border-color: #c7d2fe; }
+  .song.active { background: #eef2ff; border-color: #4338ca; }
+  .song-name { display: block; font-weight: 600; color: #111827; font-size: .95rem; }
+  .song-artist { display: block; color: #6b7280; font-size: .8rem; }
+
+  .track {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f3f4f6;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+  }
+  .track-icon {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+  }
+  .track-name { font-weight: 600; color: #111827; }
+  .track-hint { font-size: .82rem; color: #6b7280; }
+
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+    color: #6b7280;
+    font-variant-numeric: tabular-nums;
+  }
+  input[type="range"] {
+    flex: 1;
+    accent-color: #6366f1;
+    cursor: pointer;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 16px 0 18px;
+  }
+  .ctrl {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .ctrl:hover { background: #e0e7ff; }
+  .ctrl:active { transform: scale(.95); }
+  .play {
+    width: 68px;
+    height: 68px;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(99, 102, 241, .45);
+  }
+  .play:hover { background: linear-gradient(135deg, #4f46e5, #9333ea); }
+
+  .speed-title {
+    font-size: .85rem;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 10px;
+  }
+  .speeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .speed {
+    flex: 1 1 0;
+    min-width: 64px;
+    padding: 11px 8px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    background: #fff;
+    color: #374151;
+    font-size: .95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .speed:hover { border-color: #c7d2fe; }
+  .speed.active {
+    background: #4338ca;
+    border-color: #4338ca;
+    color: #fff;
+  }
+
+  .lyrics-title {
+    font-size: .85rem;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 8px;
+  }
+  .lyrics-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .lyrics-head .lyrics-title { margin-bottom: 0; }
+  .translate-row { display: flex; align-items: center; gap: 6px; }
+  .translate-row select {
+    font: inherit;
+    font-size: .85rem;
+    padding: 6px 8px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    color: #374151;
+    cursor: pointer;
+  }
+  .translate-btn {
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 600;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4338ca;
+    color: #fff;
+    cursor: pointer;
+  }
+  .translate-btn:hover { background: #3730a3; }
+  .translate-btn:disabled { background: #a5b4fc; cursor: default; }
+  .translation {
+    display: block;
+    margin-top: 2px;
+    font-size: .88rem;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .line.active .translation { color: #4338ca; }
+  .translate-error { margin: 8px 2px 0; font-size: .85rem; color: #b91c1c; }
+
+  .test-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 18px 2px 8px;
+  }
+  .test-head .lyrics-title { margin-bottom: 0; }
+  .test-btn {
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 600;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4338ca;
+    color: #fff;
+    cursor: pointer;
+  }
+  .test-btn:hover { background: #3730a3; }
+  .test-btn:disabled { background: #a5b4fc; cursor: default; }
+  .test-box { display: grid; gap: 10px; }
+  .question {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 12px 14px;
+  }
+  .question-text {
+    margin-bottom: 10px;
+    font-size: .95rem;
+    line-height: 1.5;
+    color: #111827;
+  }
+  .question-line { margin-bottom: 4px; font-style: italic; color: #4b5563; }
+  .listen-btn {
+    font: inherit;
+    font-size: .8rem;
+    padding: 4px 9px;
+    margin-bottom: 10px;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #3730a3;
+    cursor: pointer;
+  }
+  .listen-btn:hover { background: #e0e7ff; }
+  .options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  .option {
+    font: inherit;
+    font-size: .88rem;
+    text-align: left;
+    padding: 8px 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    color: #374151;
+    cursor: pointer;
+  }
+  .option:hover:not(:disabled) { border-color: #c7d2fe; }
+  .option:disabled { cursor: default; }
+  .option.correct { background: #dcfce7; border-color: #16a34a; color: #14532d; font-weight: 600; }
+  .option.wrong { background: #fee2e2; border-color: #dc2626; color: #7f1d1d; }
+  .test-score { margin: 4px 2px 0; font-size: .9rem; font-weight: 600; color: #4338ca; }
+  .chat-box {
+    gap: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+  }
+  .chat-box:not([hidden]) { display: grid; }
+  .msg {
+    max-width: 85%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: .92rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+  }
+  .msg.user { justify-self: end; background: #eef2ff; color: #1e1b4b; }
+  .msg.ai { justify-self: start; background: #fff; border: 1px solid #e5e7eb; color: #111827; }
+  .chat-form { display: flex; gap: 8px; }
+  .chat-input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    color: #111827;
+  }
+  .chat-input:disabled { background: #f3f4f6; }
+  .essay-input {
+    width: 100%;
+    min-height: 120px;
+    font: inherit;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background: #fff;
+    color: #111827;
+    resize: vertical;
+  }
+  .essay-input:disabled { background: #f3f4f6; }
+  .essay-count {
+    margin: 4px 2px 8px;
+    font-size: .78rem;
+    color: #9ca3af;
+    text-align: right;
+  }
+  .essay-box {
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    font-size: .92rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+  }
+  .lyrics {
+    position: relative;
+    max-height: 240px;
+    overflow-y: auto;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 8px;
+    scroll-behavior: smooth;
+  }
+  .line {
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.45;
+    cursor: pointer;
+    transition: background .15s, color .15s;
+  }
+  .line:hover { background: #f3f4f6; }
+  .line.active {
+    background: #eef2ff;
+    color: #1e1b4b;
+    font-weight: 600;
+  }
+  .line.music { color: #c4c7cf; font-style: italic; cursor: default; }
+  .line.music.active { background: #f3f4f6; color: #9ca3af; font-weight: 400; }
+  .loading { margin: 0; padding: 10px 12px; color: #9ca3af; font-size: .9rem; }
+
+  .credit {
+    margin: 10px 2px 0;
+    font-size: .75rem;
+    color: #9ca3af;
+    line-height: 1.5;
+  }
+  .credit a { color: #6366f1; text-decoration: none; }
+  .credit a:hover { text-decoration: underline; }
+
+  .hint {
+    margin-top: 14px;
+    font-size: .82rem;
+    color: #9ca3af;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>Song English 🎵</h1>
+    <p class="subtitle">Step 6: follow the lyrics, translate them, take a test, talk with the AI and write an essay.</p>
+
+    <div class="song-title">Songs</div>
+    <div class="songs" id="songs"></div>
+
+    <div class="track">
+      <div class="track-icon">🎧</div>
+      <div>
+        <div class="track-name" id="trackName">Loading songs…</div>
+        <div class="track-hint" id="trackArtist"></div>
+      </div>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
+
+    <div class="progress-row">
+      <span id="timeNow">0:00</span>
+      <input type="range" id="seek" min="0" max="1000" value="0" aria-label="Song position">
+      <span id="timeTotal">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button class="ctrl" id="back" title="Back 5 seconds" aria-label="Back 5 seconds">−5s</button>
+      <button class="ctrl play" id="playBtn" title="Play or pause" aria-label="Play or pause">▶</button>
+      <button class="ctrl" id="forward" title="Forward 5 seconds" aria-label="Forward 5 seconds">+5s</button>
+    </div>
+
+    <div class="speed-title">Speed</div>
+    <div class="speeds" id="speeds">
+      <button class="speed" data-speed="0.5">0.5x</button>
+      <button class="speed" data-speed="0.75">0.75x</button>
+      <button class="speed active" data-speed="1">1x</button>
+      <button class="speed" data-speed="1.25">1.25x</button>
+      <button class="speed" data-speed="1.5">1.5x</button>
+    </div>
+
+    <div class="lyrics-head">
+      <div class="lyrics-title">Lyrics</div>
+      <div class="translate-row">
+        <select id="lang" aria-label="Translation language">
+          <option value="ru">Russian</option>
+          <option value="kk">Kazakh</option>
+        </select>
+        <button class="translate-btn" id="translateBtn" disabled>Translate</button>
+      </div>
+    </div>
+    <div class="lyrics" id="lyrics"><p class="loading">Loading songs…</p></div>
+    <p class="translate-error" id="translateError" hidden></p>
+    <p class="credit" id="credit"></p>
+
+    <div class="test-head">
+      <div class="lyrics-title">Test</div>
+      <button class="test-btn" id="testBtn" disabled>Make test</button>
+    </div>
+    <div class="test-box" id="testBox" hidden></div>
+    <p class="translate-error" id="testError" hidden></p>
+
+    <div class="test-head">
+      <div class="lyrics-title">Talk about the song</div>
+      <button class="test-btn" id="chatClearBtn" disabled>Clear chat</button>
+    </div>
+    <div class="chat-box" id="chatBox" hidden></div>
+    <form class="chat-form" id="chatForm">
+      <input class="chat-input" id="chatInput" type="text" placeholder="Ask about a word or a line…" autocomplete="off" disabled>
+      <button class="test-btn" id="chatSendBtn" type="submit" disabled>Send</button>
+    </form>
+    <p class="translate-error" id="chatError" hidden></p>
+
+    <div class="test-head">
+      <div class="lyrics-title">Essay</div>
+      <button class="test-btn" id="essayBtn" disabled>Check my essay</button>
+    </div>
+    <textarea class="essay-input" id="essayInput" rows="5" disabled
+      placeholder="Write 4–8 sentences about this song: what is it about, how it makes you feel, your favourite line and why…"></textarea>
+    <p class="essay-count" id="essayCount">0 words</p>
+    <div class="essay-box" id="essayFeedback" hidden></div>
+    <p class="translate-error" id="essayError" hidden></p>
+
+    <p class="hint">Tip: start at 0.75x. Click a line to jump to that moment.</p>
+  </main>
+
+<script>
+(function () {
+  const audio = document.getElementById('audio');
+  const playBtn = document.getElementById('playBtn');
+  const seek = document.getElementById('seek');
+  const timeNow = document.getElementById('timeNow');
+  const timeTotal = document.getElementById('timeTotal');
+  const speeds = document.getElementById('speeds');
+  const back = document.getElementById('back');
+  const forward = document.getElementById('forward');
+  const songsBox = document.getElementById('songs');
+  const lyricsBox = document.getElementById('lyrics');
+  const credit = document.getElementById('credit');
+  const trackName = document.getElementById('trackName');
+  const trackArtist = document.getElementById('trackArtist');
+  const translateBtn = document.getElementById('translateBtn');
+  const langSelect = document.getElementById('lang');
+  const translateError = document.getElementById('translateError');
+  const testBtn = document.getElementById('testBtn');
+  const testBox = document.getElementById('testBox');
+  const testError = document.getElementById('testError');
+  const chatBox = document.getElementById('chatBox');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+  const chatSendBtn = document.getElementById('chatSendBtn');
+  const chatClearBtn = document.getElementById('chatClearBtn');
+  const chatError = document.getElementById('chatError');
+  const essayInput = document.getElementById('essayInput');
+  const essayBtn = document.getElementById('essayBtn');
+  const essayCount = document.getElementById('essayCount');
+  const essayFeedback = document.getElementById('essayFeedback');
+  const essayError = document.getElementById('essayError');
+
+  const API = location.pathname.split('/proxy/')[0] + '/proxy/19040/v1';
+  let listenTimer = 0;
+
+  let rate = 1;
+  let lines = [];
+  let activeIndex = -1;
+  let currentSong = null;
+  let lyricsData = [];
+  let transKey = null;
+  let transCache = {};
+  let chatHistory = [];
+  let chatBusy = false;
+  let essayBusy = false;
+
+  function formatTime(seconds) {
+    if (!isFinite(seconds)) return '0:00';
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return m + ':' + String(s).padStart(2, '0');
+  }
+
+  function updatePlayButton() {
+    playBtn.textContent = audio.paused ? '▶' : '⏸';
+  }
+
+  function showError(message) {
+    lyricsBox.innerHTML = '';
+    const p = document.createElement('p');
+    p.className = 'loading';
+    p.textContent = message;
+    lyricsBox.appendChild(p);
+  }
+
+  function clearActive() {
+    if (activeIndex >= 0 && lines[activeIndex]) {
+      lines[activeIndex].classList.remove('active');
+    }
+    activeIndex = -1;
+  }
+
+  function renderLines(songLines) {
+    clearActive();
+    lyricsBox.innerHTML = '';
+    lines = [];
+    lyricsData = songLines;
+    songLines.forEach(function (item) {
+      const div = document.createElement('div');
+      div.className = 'line' + (item.text === '♪' ? ' music' : '');
+      div.textContent = item.text;
+      div.dataset.start = item.start;
+      div.dataset.end = item.end;
+      if (item.text !== '♪') {
+        div.addEventListener('click', function () {
+          audio.currentTime = Number(div.dataset.start) + 0.01;
+          audio.play();
+        });
+      }
+      lyricsBox.appendChild(div);
+      lines.push(div);
+    });
+    translateError.hidden = true;
+    translateBtn.disabled = songLines.length === 0;
+    applyTranslation(null);
+    clearTest();
+    testBtn.disabled = songLines.length === 0;
+    syncChatControls();
+    syncEssayControls();
+  }
+
+  function applyTranslation(key) {
+    lines.forEach(function (div) {
+      const old = div.querySelector('.translation');
+      if (old) old.remove();
+    });
+    if (!key || !transCache[key]) {
+      transKey = null;
+      translateBtn.textContent = 'Translate';
+      return;
+    }
+    const translations = transCache[key];
+    lines.forEach(function (div, i) {
+      if (!translations[i]) return;
+      const span = document.createElement('span');
+      span.className = 'translation';
+      span.textContent = translations[i];
+      div.appendChild(span);
+    });
+    transKey = key;
+    translateBtn.textContent = 'Hide translation';
+  }
+
+  async function translateLyrics() {
+    if (!currentSong || !lyricsData.length) return;
+    const key = currentSong.id + ':' + langSelect.value;
+    if (transKey === key) {
+      applyTranslation(null);
+      return;
+    }
+    if (transCache[key]) {
+      applyTranslation(key);
+      return;
+    }
+
+    const items = [];
+    lyricsData.forEach(function (item, i) {
+      if (item.text !== '♪') items.push({ index: i, text: item.text });
+    });
+    if (!items.length) {
+      translateError.hidden = false;
+      translateError.textContent = 'There are no words to translate in this song.';
+      return;
+    }
+
+    translateError.hidden = true;
+    translateBtn.disabled = true;
+    translateBtn.textContent = 'Translating…';
+    const target = langSelect.value === 'kk' ? 'Kazakh' : 'Russian';
+
+    try {
+      const numbered = items.map(function (item, n) {
+        return (n + 1) + '. ' + item.text;
+      }).join('\n');
+      const r = await fetch(API + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'DeepSeek-V4.1-Flash',
+          temperature: 0.2,
+          messages: [
+            {
+              role: 'system',
+              content: 'You translate English song lyrics to ' + target + '. The user sends exactly ' + items.length +
+                ' numbered lines. Answer with ONLY a JSON array of exactly ' + items.length +
+                ' strings: one translation per line, in the same order. Use simple, natural language for a learner. ' +
+                'Do not put the line numbers in the strings and do not add any other text.'
+            },
+            { role: 'user', content: numbered }
+          ]
+        })
+      });
+      if (!r.ok) throw new Error((await r.text()).slice(0, 300));
+      const data = await r.json();
+      const content = data.choices[0].message.content;
+      const start = content.indexOf('[');
+      const end = content.lastIndexOf(']');
+      if (start < 0 || end < start) {
+        throw new Error('The model did not send a JSON list: ' + content.slice(0, 200));
+      }
+      const list = JSON.parse(content.slice(start, end + 1));
+      if (!Array.isArray(list) || list.length !== items.length) {
+        throw new Error('The model sent ' + (Array.isArray(list) ? list.length : 'no') +
+          ' lines instead of ' + items.length + '.');
+      }
+
+      const translations = lyricsData.map(function () { return ''; });
+      items.forEach(function (item, n) {
+        translations[item.index] = String(list[n]).replace(/^\s*\d+[.)]\s*/, '');
+      });
+      transCache[key] = translations;
+      applyTranslation(key);
+    } catch (err) {
+      translateError.hidden = false;
+      translateError.textContent = 'Translation failed: ' + err.message;
+      translateBtn.textContent = 'Translate';
+      console.error(err);
+    } finally {
+      translateBtn.disabled = false;
+    }
+  }
+
+  function clearTest() {
+    clearTimeout(listenTimer);
+    listenTimer = 0;
+    testBox.innerHTML = '';
+    testBox.hidden = true;
+    testError.hidden = true;
+    testBtn.textContent = 'Make test';
+  }
+
+  function playLine(start, end) {
+    audio.currentTime = start;
+    audio.play();
+    clearTimeout(listenTimer);
+    const seconds = Math.max(0.5, end - start + 0.3) / (audio.playbackRate || 1);
+    listenTimer = setTimeout(function () {
+      if (audio.currentTime >= start) audio.pause();
+    }, seconds * 1000);
+  }
+
+  function syncChatControls() {
+    const ready = !!(currentSong && lyricsData.length);
+    chatInput.disabled = !ready || chatBusy;
+    chatSendBtn.disabled = !ready || chatBusy;
+    chatClearBtn.disabled = chatBusy || (chatHistory.length === 0 && chatBox.hidden);
+  }
+
+  function clearChat() {
+    chatHistory = [];
+    chatBusy = false;
+    chatBox.innerHTML = '';
+    chatBox.hidden = true;
+    chatError.hidden = true;
+    syncChatControls();
+  }
+
+  function addBubble(role, text) {
+    const bubble = document.createElement('div');
+    bubble.className = 'msg ' + role;
+    bubble.textContent = text;
+    chatBox.appendChild(bubble);
+    chatBox.hidden = false;
+    chatBox.scrollTop = chatBox.scrollHeight;
+    return bubble;
+  }
+
+  function chatInstructions(song) {
+    const songLines = [];
+    lyricsData.forEach(function (item) {
+      if (item.text !== '♪') songLines.push(item.text);
+    });
+    return 'You are a friendly English teacher. The student learns English with the song "' +
+      song.title + '" by ' + (song.artist || 'an unknown artist') + '. Here are the lyrics:\n' +
+      songLines.join('\n') +
+      '\n\nAnswer in easy English: 2 to 4 short sentences with simple words. Explain words and ' +
+      'lines from the song and give examples. Correct the student\'s English gently. ' +
+      'If the student asks what a Russian or Kazakh word means, give the answer in that language. ' +
+      'At the end, ask one short question to keep the talk going.';
+  }
+
+  async function sendChat(text) {
+    if (!currentSong || !lyricsData.length || chatBusy) return;
+    const song = currentSong;
+    chatError.hidden = true;
+    addBubble('user', text);
+    chatHistory.push({ role: 'user', content: text });
+    chatBusy = true;
+    syncChatControls();
+    const thinking = addBubble('ai', 'Thinking…');
+
+    try {
+      const messages = [{ role: 'system', content: chatInstructions(song) }].concat(chatHistory);
+      const r = await fetch(API + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'DeepSeek-V4.1-Flash', temperature: 0.6, messages: messages })
+      });
+      const raw = await r.text();
+      if (!r.ok) throw new Error(raw || ('HTTP ' + r.status));
+      const data = JSON.parse(raw);
+      const message = data.choices && data.choices[0] && data.choices[0].message;
+      const reply = message && message.content ? String(message.content).trim() : '';
+      if (!reply) throw new Error('The model sent an empty answer.');
+      if (currentSong !== song) return;
+      thinking.textContent = reply;
+      chatBox.scrollTop = chatBox.scrollHeight;
+      chatHistory.push({ role: 'assistant', content: reply });
+      if (chatHistory.length > 12) chatHistory = chatHistory.slice(-12);
+    } catch (err) {
+      if (currentSong !== song) return;
+      thinking.remove();
+      chatError.hidden = false;
+      chatError.textContent = 'Chat failed: ' + err.message;
+      console.error(err);
+    } finally {
+      if (currentSong === song) {
+        chatBusy = false;
+        syncChatControls();
+      }
+    }
+  }
+
+  function countWords(text) {
+    const trimmed = text.trim();
+    return trimmed ? trimmed.split(/\s+/).length : 0;
+  }
+
+  function updateEssayCount() {
+    const n = countWords(essayInput.value);
+    essayCount.textContent = n + (n === 1 ? ' word' : ' words');
+  }
+
+  function syncEssayControls() {
+    const ready = !!(currentSong && lyricsData.length);
+    essayInput.disabled = !ready || essayBusy;
+    essayBtn.disabled = !ready || essayBusy;
+  }
+
+  function clearEssay() {
+    essayBusy = false;
+    essayBtn.textContent = 'Check my essay';
+    essayFeedback.hidden = true;
+    essayFeedback.textContent = '';
+    essayError.hidden = true;
+    syncEssayControls();
+  }
+
+  function essayInstructions(song) {
+    const songLines = [];
+    lyricsData.forEach(function (item) {
+      if (item.text !== '♪') songLines.push(item.text);
+    });
+    return 'You are a kind English teacher. The student learns English with the song "' +
+      song.title + '" by ' + (song.artist || 'an unknown artist') + '. Here are the lyrics:\n' +
+      songLines.join('\n') +
+      '\n\nThe student wrote a short essay about this song. Check it and answer in easy English, ' +
+      'with these parts:\n' +
+      '1. What is good (1 or 2 sentences).\n' +
+      '2. Mistakes: quote each sentence with a mistake, write the correct sentence, and explain ' +
+      'the mistake in a few short words. Number them. Write "No big mistakes!" if there are none.\n' +
+      '3. A corrected version of the whole essay, in the student\'s own words.\n' +
+      '4. One short tip for writing better next time.\n' +
+      'Be gentle. Do not change parts that are already correct and do not add new ideas.';
+  }
+
+  async function checkEssay() {
+    if (!currentSong || !lyricsData.length || essayBusy) return;
+    const text = essayInput.value.trim();
+    if (countWords(text) < 20) {
+      essayError.hidden = false;
+      essayError.textContent = 'Write a little more (at least 20 words), then press "Check my essay".';
+      return;
+    }
+    const song = currentSong;
+    essayError.hidden = true;
+    essayBusy = true;
+    essayBtn.textContent = 'Checking…';
+    syncEssayControls();
+    essayFeedback.hidden = false;
+    essayFeedback.textContent = 'Checking your essay…';
+
+    try {
+      const r = await fetch(API + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'DeepSeek-V4.1-Flash',
+          temperature: 0.3,
+          messages: [
+            { role: 'system', content: essayInstructions(song) },
+            { role: 'user', content: text }
+          ]
+        })
+      });
+      const raw = await r.text();
+      if (!r.ok) throw new Error(raw || ('HTTP ' + r.status));
+      const data = JSON.parse(raw);
+      const message = data.choices && data.choices[0] && data.choices[0].message;
+      const reply = message && message.content ? String(message.content).trim() : '';
+      if (!reply) throw new Error('The model sent an empty answer.');
+      if (currentSong !== song) return;
+      essayFeedback.textContent = reply;
+    } catch (err) {
+      if (currentSong !== song) return;
+      essayFeedback.hidden = true;
+      essayError.hidden = false;
+      essayError.textContent = 'Essay check failed: ' + err.message;
+      console.error(err);
+    } finally {
+      if (currentSong === song) {
+        essayBusy = false;
+        essayBtn.textContent = 'Check my essay';
+        syncEssayControls();
+      }
+    }
+  }
+
+  function renderTest(questions) {
+    testBox.innerHTML = '';
+    let answered = 0;
+    let correct = 0;
+    const total = questions.length;
+
+    const score = document.createElement('p');
+    score.className = 'test-score';
+    function updateScore() {
+      const percent = total ? Math.round((correct / total) * 100) : 0;
+      score.textContent = 'Score: ' + correct + ' / ' + total +
+        (answered === total ? ' (' + percent + '%)' : '');
+    }
+
+    questions.forEach(function (q, n) {
+      const card = document.createElement('div');
+      card.className = 'question';
+      const line = document.createElement('div');
+      line.className = 'question-text question-line';
+      line.textContent = (n + 1) + '. “' + q.line + '”';
+      const ask = document.createElement('div');
+      ask.className = 'question-text';
+      ask.textContent = q.question;
+      const options = document.createElement('div');
+      options.className = 'options';
+
+      const buttons = [];
+      let done = false;
+      q.options.forEach(function (choice) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'option';
+        button.textContent = choice;
+        button.addEventListener('click', function () {
+          if (done) return;
+          done = true;
+          answered += 1;
+          if (choice === q.answer) {
+            correct += 1;
+            button.classList.add('correct');
+          } else {
+            button.classList.add('wrong');
+            buttons.forEach(function (b) {
+              if (b.textContent === q.answer) b.classList.add('correct');
+            });
+          }
+          buttons.forEach(function (b) { b.disabled = true; });
+          updateScore();
+        });
+        buttons.push(button);
+        options.appendChild(button);
+      });
+
+      if (q.start != null && q.end != null) {
+        const listen = document.createElement('button');
+        listen.type = 'button';
+        listen.className = 'listen-btn';
+        listen.textContent = '▶ Listen to the line';
+        listen.addEventListener('click', function () { playLine(q.start, q.end); });
+        card.append(line, ask, listen, options);
+      } else {
+        card.append(line, ask, options);
+      }
+      testBox.appendChild(card);
+    });
+
+    testBox.appendChild(score);
+    updateScore();
+    testBox.hidden = false;
+  }
+
+  async function makeTest() {
+    if (!currentSong || !lyricsData.length) return;
+    const song = currentSong;
+    const songLines = [];
+    lyricsData.forEach(function (item) {
+      if (item.text !== '♪') songLines.push(item.text);
+    });
+    if (songLines.length < 2) {
+      testError.hidden = false;
+      testError.textContent = 'There are too few words in this song to make a test.';
+      return;
+    }
+
+    testError.hidden = true;
+    testBox.innerHTML = '';
+    testBox.hidden = true;
+    testBtn.disabled = true;
+    testBtn.textContent = 'Making test…';
+
+    try {
+      const r = await fetch(API + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'DeepSeek-V4.1-Flash',
+          temperature: 0.4,
+          messages: [
+            {
+              role: 'system',
+              content: 'You make an English vocabulary test for a learner from song lyrics. Make exactly 5 ' +
+                'questions. In each question choose one exact line from the lyrics and one useful word or short ' +
+                'phrase from that line. Ask what that word or phrase MEANS in the line. Each answer choice is a ' +
+                'short, simple English explanation (3 to 8 words): one correct meaning and 3 wrong meanings. Do ' +
+                'not test song memory; test understanding of English. Answer with ONLY a JSON array of exactly 5 ' +
+                'objects with the keys "line" (copied exactly from the lyrics), "word" (the word or phrase, ' +
+                'copied exactly from the line), "question" (for example: What does "fill my cup" mean here?), ' +
+                '"answer" (the correct explanation, exactly as it appears in options) and "options" (an array of ' +
+                'exactly 4 strings that includes the answer). Do not add any other text.'
+            },
+            { role: 'user', content: songLines.join('\n') }
+          ]
+        })
+      });
+      if (!r.ok) throw new Error((await r.text()).slice(0, 300));
+      const data = await r.json();
+      const content = data.choices[0].message.content;
+      const start = content.indexOf('[');
+      const end = content.lastIndexOf(']');
+      if (start < 0 || end < start) {
+        throw new Error('The model did not send a JSON list: ' + content.slice(0, 200));
+      }
+      const list = JSON.parse(content.slice(start, end + 1));
+      if (!Array.isArray(list) || !list.length) {
+        throw new Error('The model sent no questions.');
+      }
+
+      function norm(text) {
+        return String(text).replace(/\s+/g, ' ').trim().toLowerCase();
+      }
+
+      // Find the part of the song that holds the word. The model sometimes joins two short
+      // lyric lines, and a phrase can also be split across two lines ("Big blank" / "slate").
+      function findLine(text, word) {
+        const want = norm(text).split(' ');
+        const phrase = norm(word).split(' ').filter(Boolean);
+
+        function scoreOf(item) {
+          let score = 0;
+          norm(item.text).split(' ').forEach(function (x) {
+            if (want.indexOf(x) >= 0) score += 1;
+          });
+          return score;
+        }
+
+        function bestFor(w) {
+          let best = null;
+          let bestScore = -1;
+          lyricsData.forEach(function (item) {
+            if (item.text === '♪') return;
+            if (norm(item.text).split(' ').indexOf(w) < 0) return;
+            const score = scoreOf(item);
+            if (score > bestScore) {
+              bestScore = score;
+              best = item;
+            }
+          });
+          return best;
+        }
+
+        if (!phrase.length) return null;
+        const from = bestFor(phrase[0]);
+        const to = bestFor(phrase[phrase.length - 1]);
+        if (!from && !to) return null;
+        const a = from || to;
+        const b = to || from;
+        return { start: Math.min(a.start, b.start), end: Math.max(a.end, b.end) };
+      }
+
+      const questions = list.slice(0, 5).map(function (q) {
+        if (!q || typeof q.line !== 'string' || typeof q.question !== 'string' ||
+            !Array.isArray(q.options)) {
+          throw new Error('The model sent a question in the wrong shape.');
+        }
+        const answer = String(q.answer || '');
+        const options = q.options.map(String);
+        if (options.length !== 4 || options.indexOf(answer) < 0) {
+          throw new Error('The model gave a question with bad answer choices.');
+        }
+        const found = findLine(q.line, q.word);
+        return {
+          line: q.line,
+          question: q.question,
+          answer: answer,
+          options: options,
+          start: found ? found.start : null,
+          end: found ? found.end : null
+        };
+      });
+      if (currentSong !== song) return;
+      renderTest(questions);
+      testBtn.textContent = 'New test';
+    } catch (err) {
+      if (currentSong !== song) return;
+      testError.hidden = false;
+      testError.textContent = 'Test failed: ' + err.message;
+      testBtn.textContent = 'Make test';
+      console.error(err);
+    } finally {
+      if (currentSong === song) testBtn.disabled = false;
+    }
+  }
+
+  function highlight() {
+    const t = audio.currentTime;
+    let index = -1;
+    for (let i = 0; i < lines.length; i++) {
+      if (Number(lines[i].dataset.start) <= t + 0.05) index = i;
+      else break;
+    }
+    if (index === activeIndex) return;
+    if (activeIndex >= 0 && lines[activeIndex]) lines[activeIndex].classList.remove('active');
+    activeIndex = index;
+    if (index >= 0 && lines[index]) {
+      const line = lines[index];
+      line.classList.add('active');
+      lyricsBox.scrollTop = line.offsetTop - lyricsBox.clientHeight / 2 + line.offsetHeight / 2;
+    }
+  }
+
+  async function loadSong(song) {
+    currentSong = song;
+    document.querySelectorAll('.song').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.id === song.id);
+    });
+    trackName.textContent = song.title;
+    trackArtist.textContent = song.artist;
+    credit.innerHTML = '';
+    if (song.license) {
+      const a = document.createElement('a');
+      a.href = song.licenseUrl;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = song.license;
+      credit.append('Music: ' + song.artist + ' — “' + song.title + '”, ', a);
+      if (song.source) {
+        const s = document.createElement('a');
+        s.href = song.source;
+        s.target = '_blank';
+        s.rel = 'noopener';
+        s.textContent = ' source';
+        credit.append(' · ', s);
+      }
+      credit.append('. Lyrics by Whisper.');
+    }
+
+    audio.pause();
+    audio.src = song.audio;
+    audio.playbackRate = rate;
+    audio.load();
+    timeNow.textContent = '0:00';
+    timeTotal.textContent = '0:00';
+    seek.value = 0;
+    updatePlayButton();
+    clearActive();
+    lines = [];
+    lyricsData = [];
+    transKey = null;
+    translateBtn.disabled = true;
+    translateBtn.textContent = 'Translate';
+    translateError.hidden = true;
+    testBtn.disabled = true;
+    clearTest();
+    clearChat();
+    clearEssay();
+    showError('Loading lyrics…');
+
+    try {
+      const r = await fetch(song.lyrics);
+      if (!r.ok) throw new Error('HTTP ' + r.status + ': ' + (await r.text()));
+      const data = await r.json();
+      if (currentSong !== song) return;
+      renderLines(data.lines || []);
+      highlight();
+    } catch (err) {
+      showError('Could not load the lyrics: ' + err.message);
+      console.error(err);
+    }
+  }
+
+  async function start() {
+    try {
+      const r = await fetch('playlist.json');
+      if (!r.ok) throw new Error('HTTP ' + r.status + ': ' + (await r.text()));
+      const data = await r.json();
+      const songs = data.songs || [];
+      if (!songs.length) {
+        showError('The playlist has no songs.');
+        return;
+      }
+      songs.forEach(function (song) {
+        const button = document.createElement('button');
+        button.className = 'song';
+        button.dataset.id = song.id;
+        const name = document.createElement('span');
+        name.className = 'song-name';
+        name.textContent = song.title;
+        const artist = document.createElement('span');
+        artist.className = 'song-artist';
+        artist.textContent = song.artist;
+        button.append(name, artist);
+        button.addEventListener('click', function () {
+          if (currentSong && currentSong.id === song.id) return;
+          loadSong(song);
+        });
+        songsBox.appendChild(button);
+      });
+      loadSong(songs[0]);
+    } catch (err) {
+      trackName.textContent = 'Could not load the songs';
+      showError('Could not load playlist.json: ' + err.message);
+      console.error(err);
+    }
+  }
+
+  playBtn.addEventListener('click', function () {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+
+  audio.addEventListener('play', updatePlayButton);
+  audio.addEventListener('pause', updatePlayButton);
+  audio.addEventListener('ended', function () {
+    updatePlayButton();
+    seek.value = 0;
+  });
+
+  audio.addEventListener('loadedmetadata', function () {
+    timeTotal.textContent = formatTime(audio.duration);
+    audio.playbackRate = rate;
+    highlight();
+  });
+
+  audio.addEventListener('timeupdate', function () {
+    timeNow.textContent = formatTime(audio.currentTime);
+    if (audio.duration) {
+      seek.value = Math.round((audio.currentTime / audio.duration) * 1000);
+    }
+    highlight();
+  });
+
+  seek.addEventListener('input', function () {
+    if (audio.duration) {
+      audio.currentTime = (seek.value / 1000) * audio.duration;
+      highlight();
+    }
+  });
+
+  back.addEventListener('click', function () {
+    audio.currentTime = Math.max(0, audio.currentTime - 5);
+    highlight();
+  });
+
+  forward.addEventListener('click', function () {
+    audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 5);
+    highlight();
+  });
+
+  translateBtn.addEventListener('click', translateLyrics);
+  testBtn.addEventListener('click', makeTest);
+
+  chatForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const text = chatInput.value.trim();
+    if (!text) return;
+    chatInput.value = '';
+    sendChat(text);
+  });
+
+  chatClearBtn.addEventListener('click', clearChat);
+
+  essayInput.addEventListener('input', updateEssayCount);
+  essayBtn.addEventListener('click', checkEssay);
+
+  langSelect.addEventListener('change', function () {
+    if (transKey) applyTranslation(null);
+  });
+
+  speeds.addEventListener('click', function (event) {
+    const button = event.target.closest('.speed');
+    if (!button) return;
+    rate = Number(button.dataset.speed);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.speed').forEach(function (b) {
+      b.classList.toggle('active', b === button);
+    });
+  });
+
+  start();
+})();
+</script>
+</body>
+</html>
