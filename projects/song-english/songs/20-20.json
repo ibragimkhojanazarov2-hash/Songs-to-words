@@ -8,13 +8,9 @@
  "lines": [
   {
    "start": 4.18,
-   "end": 8.76,
-   "text": "I took a wrong turn a thousand miles"
-  },
-  {
-   "start": 8.76,
    "end": 9.26,
-   "text": "back"
+   "text": "I took a wrong turn a thousand miles back",
+   "verse": true
   },
   {
    "start": 14.7,
@@ -24,7 +20,8 @@
   {
    "start": 22.31,
    "end": 23.01,
-   "text": "of the mind."
+   "text": "of the mind",
+   "check": true
   },
   {
    "start": 28.13,
@@ -33,83 +30,86 @@
   },
   {
    "start": 34.32,
-   "end": 39.01,
-   "text": "And I should know where I am It's"
+   "end": 38.34,
+   "text": "And I should know where I am"
   },
   {
-   "start": 39.01,
-   "end": 42.29,
-   "text": "a different place, a different face, a different"
+   "start": 38.34,
+   "end": 41.48,
+   "text": "It's a different place, a different face"
   },
   {
-   "start": 42.29,
+   "start": 41.48,
    "end": 46.49,
-   "text": "name, but somehow all the same."
+   "text": "A different name, but somehow all the same"
   },
   {
    "start": 50.69,
-   "end": 55.5,
-   "text": "It's like a lost and found And when"
+   "end": 54.3,
+   "text": "It's like a lost and found"
   },
   {
-   "start": 55.5,
+   "start": 54.3,
    "end": 60.1,
-   "text": "I turn around, it's 2020."
+   "text": "And when I turn around, it's 20/20"
   },
   {
    "start": 67.19,
    "end": 69.49,
-   "text": "Well the fog was wrapped around me"
+   "text": "Well the fog was wrapped around me",
+   "verse": true
   },
   {
    "start": 73.47,
-   "end": 78.78,
-   "text": "Settled in for years Now the day has"
+   "end": 76.42,
+   "text": "Settled in for years"
   },
   {
-   "start": 78.78,
-   "end": 84.52,
-   "text": "pushed it all away The line"
+   "start": 76.42,
+   "end": 82.66,
+   "text": "Now the day has pushed it all away"
   },
   {
-   "start": 84.52,
+   "start": 82.66,
    "end": 86.06,
-   "text": "is getting clear"
+   "text": "The line is getting clear",
+   "check": true
   },
   {
    "start": 90.97,
-   "end": 95.81,
-   "text": "So I followed all the breadcrumbs Oh, and"
+   "end": 94.84,
+   "text": "So I followed all the breadcrumbs"
   },
   {
-   "start": 95.81,
-   "end": 101.8,
-   "text": "I tried to find the track But"
+   "start": 94.84,
+   "end": 100.99,
+   "text": "Oh, and I tried to find the track"
   },
   {
-   "start": 101.8,
-   "end": 104.96,
-   "text": "I can't return, that bridge was burned The"
+   "start": 100.99,
+   "end": 104.65,
+   "text": "But I can't return, that bridge was burned"
   },
   {
-   "start": 104.96,
-   "end": 107.56,
-   "text": "first time I went past, but I keep"
+   "start": 104.65,
+   "end": 106.71,
+   "text": "The first time I went past"
   },
   {
-   "start": 107.56,
+   "start": 106.71,
    "end": 111.08,
-   "text": "looking back"
+   "text": "But I keep looking back"
   },
   {
    "start": 113.67,
-   "end": 119.21,
-   "text": "Like lost and found When I turn"
+   "end": 117.08,
+   "text": "Like lost and found",
+   "verse": true
   },
   {
-   "start": 119.21,
+   "start": 117.08,
    "end": 122.67,
-   "text": "around It's 2020"
+   "text": "When I turn around, it's 20/20"
   },
   {
    "start": 122.67,
@@ -119,42 +119,60 @@
   {
    "start": 148.26,
    "end": 150.2,
-   "text": "Don't regret what hasn't happened"
+   "text": "Don't regret what hasn't happened",
+   "verse": true
   },
   {
    "start": 154.64,
-   "end": 160.57,
-   "text": "I wonder what It's only memories I'll"
+   "end": 156.88,
+   "text": "I wonder what",
+   "check": true
   },
   {
-   "start": 160.57,
-   "end": 164.03,
-   "text": "never see, and places I won't go in"
+   "start": 156.88,
+   "end": 161.59,
+   "text": "It's only memories I'll never see"
   },
   {
-   "start": 164.03,
+   "start": 161.59,
    "end": 165.07,
-   "text": "curiosity."
+   "text": "And places I won't go in curiosity",
+   "check": true
   },
   {
    "start": 170.69,
-   "end": 176.32,
-   "text": "Like a lost and found When I turn"
+   "end": 174.31,
+   "text": "Like a lost and found",
+   "verse": true
   },
   {
-   "start": 176.32,
+   "start": 174.31,
    "end": 179.98,
-   "text": "around It's 2020"
+   "text": "When I turn around, it's 20/20"
   },
   {
    "start": 185.79,
-   "end": 191.31,
-   "text": "If I knew it then Run"
+   "end": 190.32,
+   "text": "If I knew it then",
+   "verse": true,
+   "check": true
   },
   {
-   "start": 191.31,
+   "start": 190.32,
+   "end": 192.56,
+   "text": "Run again",
+   "check": true
+  },
+  {
+   "start": 192.56,
    "end": 194.89,
-   "text": "again It's 2020."
+   "text": "It's 20/20"
+  },
+  {
+   "start": 194.89,
+   "end": 213.68,
+   "text": "♪"
   }
- ]
+ ],
+ "lyricsSource": "draft from Whisper (old songs/20-20.json) - no official lyrics reachable yet (try joshwoodward.com). CHECK BY EAR."
 }

@@ -14,7 +14,8 @@
   {
    "start": 12.97,
    "end": 18.63,
-   "text": "Love, is this the real thing?"
+   "text": "Love, is this the real thing?",
+   "verse": true
   },
   {
    "start": 18.63,
@@ -23,43 +24,53 @@
   },
   {
    "start": 27.37,
-   "end": 30.89,
-   "text": "How you looked at me Pages of a"
+   "end": 29.66,
+   "text": "How you looked at me",
+   "verse": true
   },
   {
-   "start": 30.89,
-   "end": 36.74,
-   "text": "magazine Now you're on Always"
+   "start": 29.66,
+   "end": 32.56,
+   "text": "Pages of a magazine"
   },
   {
-   "start": 36.74,
-   "end": 41.86,
-   "text": "on my mind Every"
+   "start": 32.56,
+   "end": 40.15,
+   "text": "Now you're on, always on my mind",
+   "check": true
   },
   {
-   "start": 41.86,
-   "end": 47.04,
-   "text": "color, life and feature Never age and never"
+   "start": 40.15,
+   "end": 44.65,
+   "text": "Every color, life and feature",
+   "check": true
   },
   {
-   "start": 47.04,
-   "end": 51.02,
-   "text": "tire In my sleep and in my dreams"
+   "start": 44.65,
+   "end": 47.61,
+   "text": "Never age and never tire"
   },
   {
-   "start": 51.02,
-   "end": 56.5,
-   "text": "at night Calls to me a"
+   "start": 47.61,
+   "end": 53.1,
+   "text": "In my sleep and in my dreams at night"
   },
   {
-   "start": 56.5,
-   "end": 62.06,
-   "text": "strange attraction Your beauty and your fashion You"
+   "start": 53.1,
+   "end": 58.45,
+   "text": "Calls to me, a strange attraction",
+   "check": true
   },
   {
-   "start": 62.06,
+   "start": 58.45,
+   "end": 61.6,
+   "text": "Your beauty and your fashion",
+   "check": true
+  },
+  {
+   "start": 61.6,
    "end": 65.84,
-   "text": "are art and art will never change"
+   "text": "You are art and art will never change"
   },
   {
    "start": 65.84,
@@ -68,68 +79,79 @@
   },
   {
    "start": 89.33,
-   "end": 92.07,
-   "text": "A gray pencil mark is such a perfect"
+   "end": 94.2,
+   "text": "A gray pencil mark is such a perfect imitation of",
+   "verse": true,
+   "check": true
   },
   {
-   "start": 92.07,
-   "end": 97.75,
-   "text": "imitation of And as it seems, it"
+   "start": 94.2,
+   "end": 102.68,
+   "text": "And as it seems, it seems you're almost here"
   },
   {
-   "start": 97.75,
-   "end": 103.7,
-   "text": "seems you're almost here Grey"
+   "start": 102.68,
+   "end": 106.48,
+   "text": "Grey colour light and feature",
+   "check": true
   },
   {
-   "start": 103.7,
-   "end": 108.78,
-   "text": "colour light and feature Never age and never"
+   "start": 106.48,
+   "end": 109.35,
+   "text": "Never age and never tire"
   },
   {
-   "start": 108.78,
-   "end": 112.76,
-   "text": "tire In my sleep and in my dreams"
+   "start": 109.35,
+   "end": 114.85,
+   "text": "In my sleep and in my dreams at night"
   },
   {
-   "start": 112.76,
-   "end": 118.27,
-   "text": "at night Calls to me a"
+   "start": 114.85,
+   "end": 119.94,
+   "text": "Calls to me, a strange attraction",
+   "check": true
   },
   {
-   "start": 118.27,
+   "start": 119.94,
    "end": 123.11,
-   "text": "strange attraction With your beauty and your passion"
+   "text": "With your beauty and your passion"
   },
   {
    "start": 123.51,
    "end": 127.29,
-   "text": "You are hard and hard will never change"
+   "text": "You are hard and hard will never change",
+   "check": true
   },
   {
    "start": 129.24,
-   "end": 132.6,
-   "text": "You are just an illustration, this is just"
+   "end": 131.55,
+   "text": "You are just an illustration"
   },
   {
-   "start": 132.6,
-   "end": 135.24,
-   "text": "a simulation Lines and pixels on a piece"
+   "start": 131.55,
+   "end": 133.41,
+   "text": "This is just a simulation"
   },
   {
-   "start": 135.24,
+   "start": 133.41,
+   "end": 136.07,
+   "text": "Lines and pixels on a piece of paper"
+  },
+  {
+   "start": 136.07,
    "end": 138.92,
-   "text": "of paper You can see me slowly changing,"
+   "text": "You can see me slowly changing"
   },
   {
    "start": 138.92,
-   "end": 141.44,
-   "text": "but forever you're remaining You have time cause"
+   "end": 140.38,
+   "text": "But forever you're remaining"
   },
   {
-   "start": 141.44,
+   "start": 140.38,
    "end": 142.58,
-   "text": "you will live forever"
+   "text": "You have time 'cause you will live forever",
+   "check": true
   },
   {
    "start": 142.58,
@@ -138,28 +160,38 @@
   },
   {
    "start": 151.97,
-   "end": 156.83,
-   "text": "Should never age and never die In my"
+   "end": 155.97,
+   "text": "Should never age and never die",
+   "verse": true,
+   "check": true
   },
   {
-   "start": 156.83,
+   "start": 155.97,
    "end": 159.89,
-   "text": "sleep and in my dreams at night"
+   "text": "In my sleep and in my dreams at night"
   },
   {
    "start": 162.86,
-   "end": 167.1,
-   "text": "Close to me, a strange attraction With your"
+   "end": 166.12,
+   "text": "Close to me, a strange attraction",
+   "check": true
   },
   {
-   "start": 167.1,
-   "end": 171.5,
-   "text": "beauty and your passion You are fun, and"
+   "start": 166.12,
+   "end": 169.61,
+   "text": "With your beauty and your passion"
   },
   {
-   "start": 171.5,
+   "start": 169.61,
    "end": 173.48,
-   "text": "art will never change"
+   "text": "You are fun, and art will never change",
+   "check": true
+  },
+  {
+   "start": 173.48,
+   "end": 208.35,
+   "text": "♪"
   }
- ]
+ ],
+ "lyricsSource": "draft from Whisper (old songs/my-fair-lady.json) - no official lyrics reachable yet (try davidbyrne.com). CHECK BY EAR."
 }

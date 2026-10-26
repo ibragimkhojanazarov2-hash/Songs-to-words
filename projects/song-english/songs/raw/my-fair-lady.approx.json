@@ -1,0 +1,951 @@
+{
+ "note": "NOT a Whisper answer: word times estimated from the old line times in songs/my-fair-lady.json. Replace with songs/raw/my-fair-lady.whisper.json (python3 align_lyrics.py my-fair-lady --transcribe).",
+ "text": "Love, is this the real thing? How you looked at me Pages of a magazine Now you're on Always on my mind Every color, life and feature Never age and never tire In my sleep and in my dreams at night Calls to me a strange attraction Your beauty and your fashion You are art and art will never change A gray pencil mark is such a perfect imitation of And as it seems, it seems you're almost here Grey colour light and feature Never age and never tire In my sleep and in my dreams at night Calls to me a strange attraction With your beauty and your passion You are hard and hard will never change You are just an illustration, this is just a simulation Lines and pixels on a piece of paper You can see me slowly changing, but forever you're remaining You have time cause you will live forever Should never age and never die In my sleep and in my dreams at night Close to me, a strange attraction With your beauty and your passion You are fun, and art will never change",
+ "words": [
+  {
+   "word": " Love,",
+   "start": 12.97,
+   "end": 14.07
+  },
+  {
+   "word": " is",
+   "start": 14.07,
+   "end": 14.7
+  },
+  {
+   "word": " this",
+   "start": 14.7,
+   "end": 15.64
+  },
+  {
+   "word": " the",
+   "start": 15.64,
+   "end": 16.43
+  },
+  {
+   "word": " real",
+   "start": 16.43,
+   "end": 17.37
+  },
+  {
+   "word": " thing?",
+   "start": 17.37,
+   "end": 18.63
+  },
+  {
+   "word": " How",
+   "start": 27.37,
+   "end": 27.81
+  },
+  {
+   "word": " you",
+   "start": 27.81,
+   "end": 28.25
+  },
+  {
+   "word": " looked",
+   "start": 28.25,
+   "end": 28.95
+  },
+  {
+   "word": " at",
+   "start": 28.95,
+   "end": 29.31
+  },
+  {
+   "word": " me",
+   "start": 29.31,
+   "end": 29.66
+  },
+  {
+   "word": " Pages",
+   "start": 29.66,
+   "end": 30.27
+  },
+  {
+   "word": " of",
+   "start": 30.27,
+   "end": 30.63
+  },
+  {
+   "word": " a",
+   "start": 30.63,
+   "end": 30.89
+  },
+  {
+   "word": " magazine",
+   "start": 30.89,
+   "end": 32.56
+  },
+  {
+   "word": " Now",
+   "start": 32.56,
+   "end": 33.4
+  },
+  {
+   "word": " you're",
+   "start": 33.4,
+   "end": 34.73
+  },
+  {
+   "word": " on",
+   "start": 34.73,
+   "end": 35.4
+  },
+  {
+   "word": " Always",
+   "start": 35.4,
+   "end": 36.74
+  },
+  {
+   "word": " on",
+   "start": 36.74,
+   "end": 37.72
+  },
+  {
+   "word": " my",
+   "start": 37.72,
+   "end": 38.69
+  },
+  {
+   "word": " mind",
+   "start": 38.69,
+   "end": 40.15
+  },
+  {
+   "word": " Every",
+   "start": 40.15,
+   "end": 41.86
+  },
+  {
+   "word": " color,",
+   "start": 41.86,
+   "end": 42.66
+  },
+  {
+   "word": " life",
+   "start": 42.66,
+   "end": 43.25
+  },
+  {
+   "word": " and",
+   "start": 43.25,
+   "end": 43.75
+  },
+  {
+   "word": " feature",
+   "start": 43.75,
+   "end": 44.65
+  },
+  {
+   "word": " Never",
+   "start": 44.65,
+   "end": 45.35
+  },
+  {
+   "word": " age",
+   "start": 45.35,
+   "end": 45.84
+  },
+  {
+   "word": " and",
+   "start": 45.84,
+   "end": 46.34
+  },
+  {
+   "word": " never",
+   "start": 46.34,
+   "end": 47.04
+  },
+  {
+   "word": " tire",
+   "start": 47.04,
+   "end": 47.61
+  },
+  {
+   "word": " In",
+   "start": 47.61,
+   "end": 47.99
+  },
+  {
+   "word": " my",
+   "start": 47.99,
+   "end": 48.37
+  },
+  {
+   "word": " sleep",
+   "start": 48.37,
+   "end": 49.03
+  },
+  {
+   "word": " and",
+   "start": 49.03,
+   "end": 49.5
+  },
+  {
+   "word": " in",
+   "start": 49.5,
+   "end": 49.88
+  },
+  {
+   "word": " my",
+   "start": 49.88,
+   "end": 50.26
+  },
+  {
+   "word": " dreams",
+   "start": 50.26,
+   "end": 51.02
+  },
+  {
+   "word": " at",
+   "start": 51.02,
+   "end": 51.78
+  },
+  {
+   "word": " night",
+   "start": 51.78,
+   "end": 53.1
+  },
+  {
+   "word": " Calls",
+   "start": 53.1,
+   "end": 54.42
+  },
+  {
+   "word": " to",
+   "start": 54.42,
+   "end": 55.18
+  },
+  {
+   "word": " me",
+   "start": 55.18,
+   "end": 55.93
+  },
+  {
+   "word": " a",
+   "start": 55.93,
+   "end": 56.5
+  },
+  {
+   "word": " strange",
+   "start": 56.5,
+   "end": 57.33
+  },
+  {
+   "word": " attraction",
+   "start": 57.33,
+   "end": 58.45
+  },
+  {
+   "word": " Your",
+   "start": 58.45,
+   "end": 59.0
+  },
+  {
+   "word": " beauty",
+   "start": 59.0,
+   "end": 59.74
+  },
+  {
+   "word": " and",
+   "start": 59.74,
+   "end": 60.21
+  },
+  {
+   "word": " your",
+   "start": 60.21,
+   "end": 60.76
+  },
+  {
+   "word": " fashion",
+   "start": 60.76,
+   "end": 61.6
+  },
+  {
+   "word": " You",
+   "start": 61.6,
+   "end": 62.06
+  },
+  {
+   "word": " are",
+   "start": 62.06,
+   "end": 62.52
+  },
+  {
+   "word": " art",
+   "start": 62.52,
+   "end": 62.98
+  },
+  {
+   "word": " and",
+   "start": 62.98,
+   "end": 63.44
+  },
+  {
+   "word": " art",
+   "start": 63.44,
+   "end": 63.9
+  },
+  {
+   "word": " will",
+   "start": 63.9,
+   "end": 64.46
+  },
+  {
+   "word": " never",
+   "start": 64.46,
+   "end": 65.1
+  },
+  {
+   "word": " change",
+   "start": 65.1,
+   "end": 65.84
+  },
+  {
+   "word": " A",
+   "start": 89.33,
+   "end": 89.51
+  },
+  {
+   "word": " gray",
+   "start": 89.51,
+   "end": 89.88
+  },
+  {
+   "word": " pencil",
+   "start": 89.88,
+   "end": 90.37
+  },
+  {
+   "word": " mark",
+   "start": 90.37,
+   "end": 90.73
+  },
+  {
+   "word": " is",
+   "start": 90.73,
+   "end": 90.97
+  },
+  {
+   "word": " such",
+   "start": 90.97,
+   "end": 91.34
+  },
+  {
+   "word": " a",
+   "start": 91.34,
+   "end": 91.52
+  },
+  {
+   "word": " perfect",
+   "start": 91.52,
+   "end": 92.07
+  },
+  {
+   "word": " imitation",
+   "start": 92.07,
+   "end": 93.63
+  },
+  {
+   "word": " of",
+   "start": 93.63,
+   "end": 94.2
+  },
+  {
+   "word": " And",
+   "start": 94.2,
+   "end": 94.91
+  },
+  {
+   "word": " as",
+   "start": 94.91,
+   "end": 95.48
+  },
+  {
+   "word": " it",
+   "start": 95.48,
+   "end": 96.05
+  },
+  {
+   "word": " seems,",
+   "start": 96.05,
+   "end": 97.18
+  },
+  {
+   "word": " it",
+   "start": 97.18,
+   "end": 97.75
+  },
+  {
+   "word": " seems",
+   "start": 97.75,
+   "end": 98.94
+  },
+  {
+   "word": " you're",
+   "start": 98.94,
+   "end": 100.3
+  },
+  {
+   "word": " almost",
+   "start": 100.3,
+   "end": 101.66
+  },
+  {
+   "word": " here",
+   "start": 101.66,
+   "end": 102.68
+  },
+  {
+   "word": " Grey",
+   "start": 102.68,
+   "end": 103.7
+  },
+  {
+   "word": " colour",
+   "start": 103.7,
+   "end": 104.47
+  },
+  {
+   "word": " light",
+   "start": 104.47,
+   "end": 105.14
+  },
+  {
+   "word": " and",
+   "start": 105.14,
+   "end": 105.62
+  },
+  {
+   "word": " feature",
+   "start": 105.62,
+   "end": 106.48
+  },
+  {
+   "word": " Never",
+   "start": 106.48,
+   "end": 107.15
+  },
+  {
+   "word": " age",
+   "start": 107.15,
+   "end": 107.63
+  },
+  {
+   "word": " and",
+   "start": 107.63,
+   "end": 108.11
+  },
+  {
+   "word": " never",
+   "start": 108.11,
+   "end": 108.78
+  },
+  {
+   "word": " tire",
+   "start": 108.78,
+   "end": 109.35
+  },
+  {
+   "word": " In",
+   "start": 109.35,
+   "end": 109.73
+  },
+  {
+   "word": " my",
+   "start": 109.73,
+   "end": 110.11
+  },
+  {
+   "word": " sleep",
+   "start": 110.11,
+   "end": 110.77
+  },
+  {
+   "word": " and",
+   "start": 110.77,
+   "end": 111.24
+  },
+  {
+   "word": " in",
+   "start": 111.24,
+   "end": 111.62
+  },
+  {
+   "word": " my",
+   "start": 111.62,
+   "end": 112.0
+  },
+  {
+   "word": " dreams",
+   "start": 112.0,
+   "end": 112.76
+  },
+  {
+   "word": " at",
+   "start": 112.76,
+   "end": 113.52
+  },
+  {
+   "word": " night",
+   "start": 113.52,
+   "end": 114.85
+  },
+  {
+   "word": " Calls",
+   "start": 114.85,
+   "end": 116.18
+  },
+  {
+   "word": " to",
+   "start": 116.18,
+   "end": 116.94
+  },
+  {
+   "word": " me",
+   "start": 116.94,
+   "end": 117.7
+  },
+  {
+   "word": " a",
+   "start": 117.7,
+   "end": 118.27
+  },
+  {
+   "word": " strange",
+   "start": 118.27,
+   "end": 118.98
+  },
+  {
+   "word": " attraction",
+   "start": 118.98,
+   "end": 119.94
+  },
+  {
+   "word": " With",
+   "start": 119.94,
+   "end": 120.41
+  },
+  {
+   "word": " your",
+   "start": 120.41,
+   "end": 120.89
+  },
+  {
+   "word": " beauty",
+   "start": 120.89,
+   "end": 121.52
+  },
+  {
+   "word": " and",
+   "start": 121.52,
+   "end": 121.92
+  },
+  {
+   "word": " your",
+   "start": 121.92,
+   "end": 122.4
+  },
+  {
+   "word": " passion",
+   "start": 122.4,
+   "end": 123.11
+  },
+  {
+   "word": " You",
+   "start": 123.51,
+   "end": 123.9
+  },
+  {
+   "word": " are",
+   "start": 123.9,
+   "end": 124.3
+  },
+  {
+   "word": " hard",
+   "start": 124.3,
+   "end": 124.77
+  },
+  {
+   "word": " and",
+   "start": 124.77,
+   "end": 125.16
+  },
+  {
+   "word": " hard",
+   "start": 125.16,
+   "end": 125.64
+  },
+  {
+   "word": " will",
+   "start": 125.64,
+   "end": 126.11
+  },
+  {
+   "word": " never",
+   "start": 126.11,
+   "end": 126.66
+  },
+  {
+   "word": " change",
+   "start": 126.66,
+   "end": 127.29
+  },
+  {
+   "word": " You",
+   "start": 129.24,
+   "end": 129.57
+  },
+  {
+   "word": " are",
+   "start": 129.57,
+   "end": 129.9
+  },
+  {
+   "word": " just",
+   "start": 129.9,
+   "end": 130.29
+  },
+  {
+   "word": " an",
+   "start": 130.29,
+   "end": 130.56
+  },
+  {
+   "word": " illustration,",
+   "start": 130.56,
+   "end": 131.55
+  },
+  {
+   "word": " this",
+   "start": 131.55,
+   "end": 131.94
+  },
+  {
+   "word": " is",
+   "start": 131.94,
+   "end": 132.2
+  },
+  {
+   "word": " just",
+   "start": 132.2,
+   "end": 132.6
+  },
+  {
+   "word": " a",
+   "start": 132.6,
+   "end": 132.76
+  },
+  {
+   "word": " simulation",
+   "start": 132.76,
+   "end": 133.41
+  },
+  {
+   "word": " Lines",
+   "start": 133.41,
+   "end": 133.79
+  },
+  {
+   "word": " and",
+   "start": 133.79,
+   "end": 134.05
+  },
+  {
+   "word": " pixels",
+   "start": 134.05,
+   "end": 134.49
+  },
+  {
+   "word": " on",
+   "start": 134.49,
+   "end": 134.7
+  },
+  {
+   "word": " a",
+   "start": 134.7,
+   "end": 134.86
+  },
+  {
+   "word": " piece",
+   "start": 134.86,
+   "end": 135.24
+  },
+  {
+   "word": " of",
+   "start": 135.24,
+   "end": 135.54
+  },
+  {
+   "word": " paper",
+   "start": 135.54,
+   "end": 136.07
+  },
+  {
+   "word": " You",
+   "start": 136.07,
+   "end": 136.44
+  },
+  {
+   "word": " can",
+   "start": 136.44,
+   "end": 136.82
+  },
+  {
+   "word": " see",
+   "start": 136.82,
+   "end": 137.19
+  },
+  {
+   "word": " me",
+   "start": 137.19,
+   "end": 137.49
+  },
+  {
+   "word": " slowly",
+   "start": 137.49,
+   "end": 138.09
+  },
+  {
+   "word": " changing,",
+   "start": 138.09,
+   "end": 138.92
+  },
+  {
+   "word": " but",
+   "start": 138.92,
+   "end": 139.14
+  },
+  {
+   "word": " forever",
+   "start": 139.14,
+   "end": 139.54
+  },
+  {
+   "word": " you're",
+   "start": 139.54,
+   "end": 139.89
+  },
+  {
+   "word": " remaining",
+   "start": 139.89,
+   "end": 140.38
+  },
+  {
+   "word": " You",
+   "start": 140.38,
+   "end": 140.6
+  },
+  {
+   "word": " have",
+   "start": 140.6,
+   "end": 140.87
+  },
+  {
+   "word": " time",
+   "start": 140.87,
+   "end": 141.13
+  },
+  {
+   "word": " cause",
+   "start": 141.13,
+   "end": 141.44
+  },
+  {
+   "word": " you",
+   "start": 141.44,
+   "end": 141.66
+  },
+  {
+   "word": " will",
+   "start": 141.66,
+   "end": 141.92
+  },
+  {
+   "word": " live",
+   "start": 141.92,
+   "end": 142.19
+  },
+  {
+   "word": " forever",
+   "start": 142.19,
+   "end": 142.58
+  },
+  {
+   "word": " Should",
+   "start": 151.97,
+   "end": 152.83
+  },
+  {
+   "word": " never",
+   "start": 152.83,
+   "end": 153.59
+  },
+  {
+   "word": " age",
+   "start": 153.59,
+   "end": 154.13
+  },
+  {
+   "word": " and",
+   "start": 154.13,
+   "end": 154.67
+  },
+  {
+   "word": " never",
+   "start": 154.67,
+   "end": 155.43
+  },
+  {
+   "word": " die",
+   "start": 155.43,
+   "end": 155.97
+  },
+  {
+   "word": " In",
+   "start": 155.97,
+   "end": 156.4
+  },
+  {
+   "word": " my",
+   "start": 156.4,
+   "end": 156.83
+  },
+  {
+   "word": " sleep",
+   "start": 156.83,
+   "end": 157.38
+  },
+  {
+   "word": " and",
+   "start": 157.38,
+   "end": 157.77
+  },
+  {
+   "word": " in",
+   "start": 157.77,
+   "end": 158.09
+  },
+  {
+   "word": " my",
+   "start": 158.09,
+   "end": 158.4
+  },
+  {
+   "word": " dreams",
+   "start": 158.4,
+   "end": 159.03
+  },
+  {
+   "word": " at",
+   "start": 159.03,
+   "end": 159.34
+  },
+  {
+   "word": " night",
+   "start": 159.34,
+   "end": 159.89
+  },
+  {
+   "word": " Close",
+   "start": 162.86,
+   "end": 163.43
+  },
+  {
+   "word": " to",
+   "start": 163.43,
+   "end": 163.76
+  },
+  {
+   "word": " me,",
+   "start": 163.76,
+   "end": 164.16
+  },
+  {
+   "word": " a",
+   "start": 164.16,
+   "end": 164.41
+  },
+  {
+   "word": " strange",
+   "start": 164.41,
+   "end": 165.14
+  },
+  {
+   "word": " attraction",
+   "start": 165.14,
+   "end": 166.12
+  },
+  {
+   "word": " With",
+   "start": 166.12,
+   "end": 166.61
+  },
+  {
+   "word": " your",
+   "start": 166.61,
+   "end": 167.1
+  },
+  {
+   "word": " beauty",
+   "start": 167.1,
+   "end": 167.82
+  },
+  {
+   "word": " and",
+   "start": 167.82,
+   "end": 168.27
+  },
+  {
+   "word": " your",
+   "start": 168.27,
+   "end": 168.81
+  },
+  {
+   "word": " passion",
+   "start": 168.81,
+   "end": 169.61
+  },
+  {
+   "word": " You",
+   "start": 169.61,
+   "end": 170.06
+  },
+  {
+   "word": " are",
+   "start": 170.06,
+   "end": 170.51
+  },
+  {
+   "word": " fun,",
+   "start": 170.51,
+   "end": 171.05
+  },
+  {
+   "word": " and",
+   "start": 171.05,
+   "end": 171.5
+  },
+  {
+   "word": " art",
+   "start": 171.5,
+   "end": 171.88
+  },
+  {
+   "word": " will",
+   "start": 171.88,
+   "end": 172.34
+  },
+  {
+   "word": " never",
+   "start": 172.34,
+   "end": 172.87
+  },
+  {
+   "word": " change",
+   "start": 172.87,
+   "end": 173.48
+  }
+ ]
+}

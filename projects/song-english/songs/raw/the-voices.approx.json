@@ -1,0 +1,481 @@
+{
+ "note": "NOT a Whisper answer: word times estimated from the old line times in songs/the-voices.json. Replace with songs/raw/the-voices.whisper.json (python3 align_lyrics.py the-voices --transcribe).",
+ "text": "Oh Voices never speak, and all night Now they're in the corner, out of sight And oh, they're on the fleeting little whispers And the creeping little shivers And they're sleeping till the sun burns out Then they're gonna scream and shout Hold your breath and count to ten Remember that it's all in your head If you let them in, they'll breed and spread, and oh Gotta take them, gotta break them, gotta shake them, gotta make them Even stutter till they're all burned out You gotta drive them out We'll be right back.",
+ "words": [
+  {
+   "word": " Oh",
+   "start": 17.21,
+   "end": 17.68
+  },
+  {
+   "word": " Voices",
+   "start": 17.68,
+   "end": 18.61
+  },
+  {
+   "word": " never",
+   "start": 18.61,
+   "end": 19.43
+  },
+  {
+   "word": " speak,",
+   "start": 19.43,
+   "end": 20.37
+  },
+  {
+   "word": " and",
+   "start": 20.37,
+   "end": 20.96
+  },
+  {
+   "word": " all",
+   "start": 20.96,
+   "end": 21.54
+  },
+  {
+   "word": " night",
+   "start": 21.54,
+   "end": 22.36
+  },
+  {
+   "word": " Now",
+   "start": 23.58,
+   "end": 23.94
+  },
+  {
+   "word": " they're",
+   "start": 23.94,
+   "end": 24.58
+  },
+  {
+   "word": " in",
+   "start": 24.58,
+   "end": 24.86
+  },
+  {
+   "word": " the",
+   "start": 24.86,
+   "end": 25.22
+  },
+  {
+   "word": " corner,",
+   "start": 25.22,
+   "end": 25.86
+  },
+  {
+   "word": " out",
+   "start": 25.86,
+   "end": 26.22
+  },
+  {
+   "word": " of",
+   "start": 26.22,
+   "end": 26.5
+  },
+  {
+   "word": " sight",
+   "start": 26.5,
+   "end": 27.0
+  },
+  {
+   "word": " And",
+   "start": 27.02,
+   "end": 27.34
+  },
+  {
+   "word": " oh,",
+   "start": 27.34,
+   "end": 27.66
+  },
+  {
+   "word": " they're",
+   "start": 27.66,
+   "end": 28.23
+  },
+  {
+   "word": " on",
+   "start": 28.23,
+   "end": 28.48
+  },
+  {
+   "word": " the",
+   "start": 28.48,
+   "end": 28.8
+  },
+  {
+   "word": " fleeting",
+   "start": 28.8,
+   "end": 29.44
+  },
+  {
+   "word": " little",
+   "start": 29.44,
+   "end": 29.94
+  },
+  {
+   "word": " whispers",
+   "start": 29.94,
+   "end": 30.58
+  },
+  {
+   "word": " And",
+   "start": 30.66,
+   "end": 30.85
+  },
+  {
+   "word": " the",
+   "start": 30.85,
+   "end": 31.03
+  },
+  {
+   "word": " creeping",
+   "start": 31.03,
+   "end": 31.41
+  },
+  {
+   "word": " little",
+   "start": 31.41,
+   "end": 31.71
+  },
+  {
+   "word": " shivers",
+   "start": 31.71,
+   "end": 32.04
+  },
+  {
+   "word": " And",
+   "start": 32.04,
+   "end": 32.23
+  },
+  {
+   "word": " they're",
+   "start": 32.23,
+   "end": 32.57
+  },
+  {
+   "word": " sleeping",
+   "start": 32.57,
+   "end": 32.94
+  },
+  {
+   "word": " till",
+   "start": 32.94,
+   "end": 33.51
+  },
+  {
+   "word": " the",
+   "start": 33.51,
+   "end": 33.99
+  },
+  {
+   "word": " sun",
+   "start": 33.99,
+   "end": 34.46
+  },
+  {
+   "word": " burns",
+   "start": 34.46,
+   "end": 35.13
+  },
+  {
+   "word": " out",
+   "start": 35.13,
+   "end": 35.61
+  },
+  {
+   "word": " Then",
+   "start": 35.61,
+   "end": 36.18
+  },
+  {
+   "word": " they're",
+   "start": 36.18,
+   "end": 37.03
+  },
+  {
+   "word": " gonna",
+   "start": 37.03,
+   "end": 37.7
+  },
+  {
+   "word": " scream",
+   "start": 37.7,
+   "end": 38.89
+  },
+  {
+   "word": " and",
+   "start": 38.89,
+   "end": 39.64
+  },
+  {
+   "word": " shout",
+   "start": 39.64,
+   "end": 40.68
+  },
+  {
+   "word": " Hold",
+   "start": 55.01,
+   "end": 55.78
+  },
+  {
+   "word": " your",
+   "start": 55.78,
+   "end": 56.56
+  },
+  {
+   "word": " breath",
+   "start": 56.56,
+   "end": 57.59
+  },
+  {
+   "word": " and",
+   "start": 57.59,
+   "end": 58.23
+  },
+  {
+   "word": " count",
+   "start": 58.23,
+   "end": 59.13
+  },
+  {
+   "word": " to",
+   "start": 59.13,
+   "end": 59.65
+  },
+  {
+   "word": " ten",
+   "start": 59.65,
+   "end": 60.29
+  },
+  {
+   "word": " Remember",
+   "start": 60.63,
+   "end": 61.59
+  },
+  {
+   "word": " that",
+   "start": 61.59,
+   "end": 62.16
+  },
+  {
+   "word": " it's",
+   "start": 62.16,
+   "end": 62.73
+  },
+  {
+   "word": " all",
+   "start": 62.73,
+   "end": 63.21
+  },
+  {
+   "word": " in",
+   "start": 63.21,
+   "end": 63.59
+  },
+  {
+   "word": " your",
+   "start": 63.59,
+   "end": 64.16
+  },
+  {
+   "word": " head",
+   "start": 64.16,
+   "end": 64.74
+  },
+  {
+   "word": " If",
+   "start": 64.74,
+   "end": 65.12
+  },
+  {
+   "word": " you",
+   "start": 65.12,
+   "end": 65.42
+  },
+  {
+   "word": " let",
+   "start": 65.42,
+   "end": 65.72
+  },
+  {
+   "word": " them",
+   "start": 65.72,
+   "end": 66.08
+  },
+  {
+   "word": " in,",
+   "start": 66.08,
+   "end": 66.38
+  },
+  {
+   "word": " they'll",
+   "start": 66.38,
+   "end": 66.92
+  },
+  {
+   "word": " breed",
+   "start": 66.92,
+   "end": 67.34
+  },
+  {
+   "word": " and",
+   "start": 67.34,
+   "end": 67.64
+  },
+  {
+   "word": " spread,",
+   "start": 67.64,
+   "end": 68.18
+  },
+  {
+   "word": " and",
+   "start": 68.18,
+   "end": 68.54
+  },
+  {
+   "word": " oh",
+   "start": 68.54,
+   "end": 68.83
+  },
+  {
+   "word": " Gotta",
+   "start": 68.83,
+   "end": 69.33
+  },
+  {
+   "word": " take",
+   "start": 69.33,
+   "end": 69.76
+  },
+  {
+   "word": " them,",
+   "start": 69.76,
+   "end": 70.27
+  },
+  {
+   "word": " gotta",
+   "start": 70.27,
+   "end": 70.77
+  },
+  {
+   "word": " break",
+   "start": 70.77,
+   "end": 71.28
+  },
+  {
+   "word": " them,",
+   "start": 71.28,
+   "end": 71.78
+  },
+  {
+   "word": " gotta",
+   "start": 71.78,
+   "end": 72.09
+  },
+  {
+   "word": " shake",
+   "start": 72.09,
+   "end": 72.39
+  },
+  {
+   "word": " them,",
+   "start": 72.39,
+   "end": 72.7
+  },
+  {
+   "word": " gotta",
+   "start": 72.7,
+   "end": 73.0
+  },
+  {
+   "word": " make",
+   "start": 73.0,
+   "end": 73.26
+  },
+  {
+   "word": " them",
+   "start": 73.26,
+   "end": 73.53
+  },
+  {
+   "word": " Even",
+   "start": 73.53,
+   "end": 73.79
+  },
+  {
+   "word": " stutter",
+   "start": 73.79,
+   "end": 74.18
+  },
+  {
+   "word": " till",
+   "start": 74.18,
+   "end": 74.8
+  },
+  {
+   "word": " they're",
+   "start": 74.8,
+   "end": 75.73
+  },
+  {
+   "word": " all",
+   "start": 75.73,
+   "end": 76.25
+  },
+  {
+   "word": " burned",
+   "start": 76.25,
+   "end": 77.08
+  },
+  {
+   "word": " out",
+   "start": 77.08,
+   "end": 77.6
+  },
+  {
+   "word": " You",
+   "start": 77.6,
+   "end": 78.12
+  },
+  {
+   "word": " gotta",
+   "start": 78.12,
+   "end": 78.84
+  },
+  {
+   "word": " drive",
+   "start": 78.84,
+   "end": 79.57
+  },
+  {
+   "word": " them",
+   "start": 79.57,
+   "end": 80.65
+  },
+  {
+   "word": " out",
+   "start": 80.65,
+   "end": 81.55
+  },
+  {
+   "word": " We'll",
+   "start": 167.92,
+   "end": 168.05
+  },
+  {
+   "word": " be",
+   "start": 168.05,
+   "end": 168.13
+  },
+  {
+   "word": " right",
+   "start": 168.13,
+   "end": 168.27
+  },
+  {
+   "word": " back.",
+   "start": 168.27,
+   "end": 168.4
+  }
+ ]
+}

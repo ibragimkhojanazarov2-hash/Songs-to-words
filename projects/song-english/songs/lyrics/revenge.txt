@@ -1,0 +1,18 @@
+# source: draft from Whisper (old songs/revenge.json) - no official lyrics reachable yet. CHECK BY EAR.
+I've gone out of my way
+Big blank slate every day
+Big blank camera staring at me every day
+
+Push [?] pimp [?] start [?]
+
+Gonna get back where I am
+What the real purpose is
+What I want, what [?]
+
+Stuck in Dallas [?] with a novelette [?]
+Got a brain [?] camera staring at me like a set [?]
+Now [?]
+
+# (dropped Whisper's invented "We'll be right back." at 56 s and "Thank you." x2 at 137-140 s)
+# (dropped ~200 "oh" that Whisper put at 145.6 s, after the audio ends at 144.8 s: a hallucination loop)
+# [?] if there are real "oh, oh" lines between 106 s and 144 s, please add them here

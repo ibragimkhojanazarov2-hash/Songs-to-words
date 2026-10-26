@@ -1,0 +1,18 @@
+# source: draft from Whisper (old songs/the-voices.json) - no official lyrics reachable yet (try joshwoodward.com). CHECK BY EAR.
+Oh, voices never speak [?], and all night [?]
+Now they're in the corner, out of sight
+And oh, they're on [?] the fleeting little whispers
+And the creeping little shivers
+And they're sleeping till the sun burns out
+Then they're gonna scream and shout
+
+Hold your breath and count to ten
+Remember that it's all in your head
+If you let them in, they'll breed and spread, and oh
+Gotta take them, gotta break them
+Gotta shake them, gotta make them
+Even stutter [?] till they're all burned out
+You gotta drive them out
+
+# [?] Whisper heard NO words from 81 s to the end (200 s). Please listen and add the missing lines here.
+# (dropped Whisper's invented "We'll be right back." at 168 s)

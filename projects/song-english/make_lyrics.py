@@ -7,6 +7,9 @@
 The words come from the class speech model (Whisper, English). Lines are short
 (up to 8 words or 6 seconds), and a "no words" line (music) fills long gaps.
 Writes songs/<id>.json.
+
+Better: write the real lyrics in songs/lyrics/<id>.txt and use align_lyrics.py
+(it keeps the lyrics and takes only the times from Whisper).
 """
 import argparse
 import json

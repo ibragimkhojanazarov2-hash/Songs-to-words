@@ -17,6 +17,22 @@
 | 7 | Video | ⬜ last | Hardest: free video with synced text, or a "video-like" page (picture + text moving with the song). Decide later. |
 | 8 | Popular songs | ⬜ next | No download (copyright). Use the official YouTube embed player: the user picks a video, pastes the lyrics, the text shows next to the player; speed inside YouTube's own player (0.25x–2x). |
 
+## Finishing the site (phases)
+
+| Phase | What | Status | Notes |
+|---|---|---|---|
+| 1 | Correct lyrics for all songs | 🟡 drafts done, need ear check + real Whisper times | `songs/lyrics/<id>.txt` (drafts from Whisper, unsure words `[?]`), `align_lyrics.py` (difflib match, ♪ gaps, report). No official lyrics sites and no class Whisper were reachable from the build machine, so word times are **estimated** (`songs/raw/<id>.approx.json`). In the class workspace run `python3 align_lyrics.py --all --transcribe` → saves `songs/raw/<id>.whisper.json` and re-times every line. Invented lines removed ("We'll be right back.", "Thank you.", 200× "oh"). |
+| 2 | New layout (sticky player, tabs, language setting) | ⬜ | |
+| 3 | Learning tools (repeat line, word popup, My words, keys, saved progress) | ⬜ | |
+| 4 | Solid AI (callAI, AI-off mode, saved translations, better test/chat/essay) | ⬜ | |
+| 5 | YouTube songs + tap to sync | ⬜ | |
+| 6 | Karaoke / full-screen mode | ⬜ | |
+| 7 | Clean up, README, accessibility, publish | ⬜ | |
+
+**How to make lyrics for a song:** write `songs/lyrics/<id>.txt` (`# source: <url>` on line 1, one sung line per line,
+empty line between verses, `[?]` after an unsure word) → `python3 align_lyrics.py <id> --transcribe` → read the report
+(target: 80%+ matched, times always go up, no line over 12 words).
+
 ## Rules (important)
 
 - **Popular songs:** no download — copyright. Free songs only.

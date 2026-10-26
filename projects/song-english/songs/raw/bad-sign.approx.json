@@ -1,0 +1,1011 @@
+{
+ "note": "NOT a Whisper answer: word times estimated from the old line times in songs/bad-sign.json. Replace with songs/raw/bad-sign.whisper.json (python3 align_lyrics.py bad-sign --transcribe).",
+ "text": "I was laying on the floor when you were gone like it was something i could die from now my headaches and your friends all think i'm dumb you said it's just a bit of bad blood now i feel great but it doesn't bother me Cause I don't have the energy And the x -ray Doesn't tell me a thing Show me what the hell you see in me You're lying Now I guess it was a bad sign I was praying to the Lord for some fun Boy, I guess you didn't have some I'm betraying everything that I've become Just to prove it wasn't true, I know If I'm too late, we come and hurry me Like a kid among the dying leaves If my heart breaks We drug and care mean When we can talk about our chemistry I'm ready. And now I guess it was a bad sign And now I guess it was a bad sign All my time has turned to day All my bones have realigned And now I guess it was a bad sign And now I guess it was a bad sign And now I guess it was a bad sign",
+ "words": [
+  {
+   "word": " I",
+   "start": 16.94,
+   "end": 17.18
+  },
+  {
+   "word": " was",
+   "start": 17.18,
+   "end": 17.58
+  },
+  {
+   "word": " laying",
+   "start": 17.58,
+   "end": 18.21
+  },
+  {
+   "word": " on",
+   "start": 18.21,
+   "end": 18.53
+  },
+  {
+   "word": " the",
+   "start": 18.53,
+   "end": 18.93
+  },
+  {
+   "word": " floor",
+   "start": 18.93,
+   "end": 19.49
+  },
+  {
+   "word": " when",
+   "start": 19.49,
+   "end": 19.96
+  },
+  {
+   "word": " you",
+   "start": 19.96,
+   "end": 20.36
+  },
+  {
+   "word": " were",
+   "start": 20.36,
+   "end": 20.8
+  },
+  {
+   "word": " gone",
+   "start": 20.8,
+   "end": 21.25
+  },
+  {
+   "word": " like",
+   "start": 21.25,
+   "end": 21.69
+  },
+  {
+   "word": " it",
+   "start": 21.69,
+   "end": 21.99
+  },
+  {
+   "word": " was",
+   "start": 21.99,
+   "end": 22.36
+  },
+  {
+   "word": " something",
+   "start": 22.36,
+   "end": 23.17
+  },
+  {
+   "word": " i",
+   "start": 23.17,
+   "end": 23.39
+  },
+  {
+   "word": " could",
+   "start": 23.39,
+   "end": 23.91
+  },
+  {
+   "word": " die",
+   "start": 23.91,
+   "end": 24.37
+  },
+  {
+   "word": " from",
+   "start": 24.37,
+   "end": 24.92
+  },
+  {
+   "word": " now",
+   "start": 24.92,
+   "end": 25.38
+  },
+  {
+   "word": " my",
+   "start": 25.38,
+   "end": 25.75
+  },
+  {
+   "word": " headaches",
+   "start": 25.75,
+   "end": 26.77
+  },
+  {
+   "word": " and",
+   "start": 26.77,
+   "end": 27.23
+  },
+  {
+   "word": " your",
+   "start": 27.23,
+   "end": 27.78
+  },
+  {
+   "word": " friends",
+   "start": 27.78,
+   "end": 28.61
+  },
+  {
+   "word": " all",
+   "start": 28.61,
+   "end": 28.96
+  },
+  {
+   "word": " think",
+   "start": 28.96,
+   "end": 29.46
+  },
+  {
+   "word": " i'm",
+   "start": 29.46,
+   "end": 29.81
+  },
+  {
+   "word": " dumb",
+   "start": 29.81,
+   "end": 30.24
+  },
+  {
+   "word": " you",
+   "start": 30.24,
+   "end": 30.59
+  },
+  {
+   "word": " said",
+   "start": 30.59,
+   "end": 31.02
+  },
+  {
+   "word": " it's",
+   "start": 31.02,
+   "end": 31.44
+  },
+  {
+   "word": " just",
+   "start": 31.44,
+   "end": 31.87
+  },
+  {
+   "word": " a",
+   "start": 31.87,
+   "end": 32.14
+  },
+  {
+   "word": " bit",
+   "start": 32.14,
+   "end": 32.59
+  },
+  {
+   "word": " of",
+   "start": 32.59,
+   "end": 32.96
+  },
+  {
+   "word": " bad",
+   "start": 32.96,
+   "end": 33.41
+  },
+  {
+   "word": " blood",
+   "start": 33.41,
+   "end": 34.04
+  },
+  {
+   "word": " now",
+   "start": 34.04,
+   "end": 34.5
+  },
+  {
+   "word": " i",
+   "start": 34.5,
+   "end": 34.77
+  },
+  {
+   "word": " feel",
+   "start": 34.77,
+   "end": 35.31
+  },
+  {
+   "word": " great",
+   "start": 35.31,
+   "end": 36.11
+  },
+  {
+   "word": " but",
+   "start": 36.11,
+   "end": 36.68
+  },
+  {
+   "word": " it",
+   "start": 36.68,
+   "end": 37.14
+  },
+  {
+   "word": " doesn't",
+   "start": 37.14,
+   "end": 38.17
+  },
+  {
+   "word": " bother",
+   "start": 38.17,
+   "end": 39.09
+  },
+  {
+   "word": " me",
+   "start": 39.09,
+   "end": 39.55
+  },
+  {
+   "word": " Cause",
+   "start": 39.55,
+   "end": 40.35
+  },
+  {
+   "word": " I",
+   "start": 40.35,
+   "end": 40.69
+  },
+  {
+   "word": " don't",
+   "start": 40.69,
+   "end": 41.29
+  },
+  {
+   "word": " have",
+   "start": 41.29,
+   "end": 41.81
+  },
+  {
+   "word": " the",
+   "start": 41.81,
+   "end": 42.23
+  },
+  {
+   "word": " energy",
+   "start": 42.23,
+   "end": 42.92
+  },
+  {
+   "word": " And",
+   "start": 42.92,
+   "end": 43.35
+  },
+  {
+   "word": " the",
+   "start": 43.35,
+   "end": 43.78
+  },
+  {
+   "word": " x",
+   "start": 43.78,
+   "end": 44.04
+  },
+  {
+   "word": " -ray",
+   "start": 44.04,
+   "end": 44.55
+  },
+  {
+   "word": " Doesn't",
+   "start": 45.23,
+   "end": 46.05
+  },
+  {
+   "word": " tell",
+   "start": 46.05,
+   "end": 46.59
+  },
+  {
+   "word": " me",
+   "start": 46.59,
+   "end": 46.95
+  },
+  {
+   "word": " a",
+   "start": 46.95,
+   "end": 47.22
+  },
+  {
+   "word": " thing",
+   "start": 47.22,
+   "end": 47.86
+  },
+  {
+   "word": " Show",
+   "start": 47.86,
+   "end": 48.4
+  },
+  {
+   "word": " me",
+   "start": 48.4,
+   "end": 48.77
+  },
+  {
+   "word": " what",
+   "start": 48.77,
+   "end": 49.31
+  },
+  {
+   "word": " the",
+   "start": 49.31,
+   "end": 49.61
+  },
+  {
+   "word": " hell",
+   "start": 49.61,
+   "end": 49.97
+  },
+  {
+   "word": " you",
+   "start": 49.97,
+   "end": 50.27
+  },
+  {
+   "word": " see",
+   "start": 50.27,
+   "end": 50.57
+  },
+  {
+   "word": " in",
+   "start": 50.57,
+   "end": 50.81
+  },
+  {
+   "word": " me",
+   "start": 50.81,
+   "end": 51.05
+  },
+  {
+   "word": " You're",
+   "start": 63.65,
+   "end": 64.41
+  },
+  {
+   "word": " lying",
+   "start": 64.41,
+   "end": 65.07
+  },
+  {
+   "word": " Now",
+   "start": 65.07,
+   "end": 65.54
+  },
+  {
+   "word": " I",
+   "start": 65.54,
+   "end": 65.82
+  },
+  {
+   "word": " guess",
+   "start": 65.82,
+   "end": 66.49
+  },
+  {
+   "word": " it",
+   "start": 66.49,
+   "end": 66.86
+  },
+  {
+   "word": " was",
+   "start": 66.86,
+   "end": 67.34
+  },
+  {
+   "word": " a",
+   "start": 67.34,
+   "end": 67.62
+  },
+  {
+   "word": " bad",
+   "start": 67.62,
+   "end": 68.08
+  },
+  {
+   "word": " sign",
+   "start": 68.08,
+   "end": 68.64
+  },
+  {
+   "word": " I",
+   "start": 86.73,
+   "end": 86.99
+  },
+  {
+   "word": " was",
+   "start": 86.99,
+   "end": 87.42
+  },
+  {
+   "word": " praying",
+   "start": 87.42,
+   "end": 88.19
+  },
+  {
+   "word": " to",
+   "start": 88.19,
+   "end": 88.54
+  },
+  {
+   "word": " the",
+   "start": 88.54,
+   "end": 88.97
+  },
+  {
+   "word": " Lord",
+   "start": 88.97,
+   "end": 89.48
+  },
+  {
+   "word": " for",
+   "start": 89.48,
+   "end": 89.91
+  },
+  {
+   "word": " some",
+   "start": 89.91,
+   "end": 90.43
+  },
+  {
+   "word": " fun",
+   "start": 90.43,
+   "end": 90.92
+  },
+  {
+   "word": " Boy,",
+   "start": 90.92,
+   "end": 91.5
+  },
+  {
+   "word": " I",
+   "start": 91.5,
+   "end": 91.79
+  },
+  {
+   "word": " guess",
+   "start": 91.79,
+   "end": 92.48
+  },
+  {
+   "word": " you",
+   "start": 92.48,
+   "end": 92.96
+  },
+  {
+   "word": " didn't",
+   "start": 92.96,
+   "end": 93.74
+  },
+  {
+   "word": " have",
+   "start": 93.74,
+   "end": 94.33
+  },
+  {
+   "word": " some",
+   "start": 94.33,
+   "end": 94.91
+  },
+  {
+   "word": " I'm",
+   "start": 95.49,
+   "end": 96.0
+  },
+  {
+   "word": " betraying",
+   "start": 96.0,
+   "end": 97.13
+  },
+  {
+   "word": " everything",
+   "start": 97.13,
+   "end": 98.37
+  },
+  {
+   "word": " that",
+   "start": 98.37,
+   "end": 98.98
+  },
+  {
+   "word": " I've",
+   "start": 98.98,
+   "end": 99.6
+  },
+  {
+   "word": " become",
+   "start": 99.6,
+   "end": 100.42
+  },
+  {
+   "word": " Just",
+   "start": 100.42,
+   "end": 101.04
+  },
+  {
+   "word": " to",
+   "start": 101.04,
+   "end": 101.45
+  },
+  {
+   "word": " prove",
+   "start": 101.45,
+   "end": 101.96
+  },
+  {
+   "word": " it",
+   "start": 101.96,
+   "end": 102.26
+  },
+  {
+   "word": " wasn't",
+   "start": 102.26,
+   "end": 102.84
+  },
+  {
+   "word": " true,",
+   "start": 102.84,
+   "end": 103.35
+  },
+  {
+   "word": " I",
+   "start": 103.35,
+   "end": 103.57
+  },
+  {
+   "word": " know",
+   "start": 103.57,
+   "end": 104.01
+  },
+  {
+   "word": " If",
+   "start": 104.01,
+   "end": 104.3
+  },
+  {
+   "word": " I'm",
+   "start": 104.3,
+   "end": 104.67
+  },
+  {
+   "word": " too",
+   "start": 104.67,
+   "end": 105.27
+  },
+  {
+   "word": " late,",
+   "start": 105.27,
+   "end": 106.11
+  },
+  {
+   "word": " we",
+   "start": 106.11,
+   "end": 106.59
+  },
+  {
+   "word": " come",
+   "start": 106.59,
+   "end": 107.31
+  },
+  {
+   "word": " and",
+   "start": 107.31,
+   "end": 107.9
+  },
+  {
+   "word": " hurry",
+   "start": 107.9,
+   "end": 108.74
+  },
+  {
+   "word": " me",
+   "start": 108.74,
+   "end": 109.22
+  },
+  {
+   "word": " Like",
+   "start": 109.22,
+   "end": 109.94
+  },
+  {
+   "word": " a",
+   "start": 109.94,
+   "end": 110.19
+  },
+  {
+   "word": " kid",
+   "start": 110.19,
+   "end": 110.59
+  },
+  {
+   "word": " among",
+   "start": 110.59,
+   "end": 111.17
+  },
+  {
+   "word": " the",
+   "start": 111.17,
+   "end": 111.58
+  },
+  {
+   "word": " dying",
+   "start": 111.58,
+   "end": 112.15
+  },
+  {
+   "word": " leaves",
+   "start": 112.15,
+   "end": 112.81
+  },
+  {
+   "word": " If",
+   "start": 112.81,
+   "end": 113.13
+  },
+  {
+   "word": " my",
+   "start": 113.13,
+   "end": 113.46
+  },
+  {
+   "word": " heart",
+   "start": 113.46,
+   "end": 114.17
+  },
+  {
+   "word": " breaks",
+   "start": 114.17,
+   "end": 114.97
+  },
+  {
+   "word": " We",
+   "start": 114.97,
+   "end": 115.38
+  },
+  {
+   "word": " drug",
+   "start": 115.38,
+   "end": 115.98
+  },
+  {
+   "word": " and",
+   "start": 115.98,
+   "end": 116.48
+  },
+  {
+   "word": " care",
+   "start": 116.48,
+   "end": 117.09
+  },
+  {
+   "word": " mean",
+   "start": 117.09,
+   "end": 117.7
+  },
+  {
+   "word": " When",
+   "start": 117.7,
+   "end": 118.3
+  },
+  {
+   "word": " we",
+   "start": 118.3,
+   "end": 118.65
+  },
+  {
+   "word": " can",
+   "start": 118.65,
+   "end": 119.1
+  },
+  {
+   "word": " talk",
+   "start": 119.1,
+   "end": 119.63
+  },
+  {
+   "word": " about",
+   "start": 119.63,
+   "end": 120.25
+  },
+  {
+   "word": " our",
+   "start": 120.25,
+   "end": 120.69
+  },
+  {
+   "word": " chemistry",
+   "start": 120.69,
+   "end": 121.67
+  },
+  {
+   "word": " I'm",
+   "start": 121.67,
+   "end": 122.11
+  },
+  {
+   "word": " ready.",
+   "start": 122.11,
+   "end": 122.82
+  },
+  {
+   "word": " And",
+   "start": 133.97,
+   "end": 134.49
+  },
+  {
+   "word": " now",
+   "start": 134.49,
+   "end": 135.01
+  },
+  {
+   "word": " I",
+   "start": 135.01,
+   "end": 135.32
+  },
+  {
+   "word": " guess",
+   "start": 135.32,
+   "end": 136.05
+  },
+  {
+   "word": " it",
+   "start": 136.05,
+   "end": 136.46
+  },
+  {
+   "word": " was",
+   "start": 136.46,
+   "end": 136.98
+  },
+  {
+   "word": " a",
+   "start": 136.98,
+   "end": 137.29
+  },
+  {
+   "word": " bad",
+   "start": 137.29,
+   "end": 137.81
+  },
+  {
+   "word": " sign",
+   "start": 137.81,
+   "end": 138.44
+  },
+  {
+   "word": " And",
+   "start": 138.44,
+   "end": 138.96
+  },
+  {
+   "word": " now",
+   "start": 138.96,
+   "end": 139.49
+  },
+  {
+   "word": " I",
+   "start": 139.49,
+   "end": 139.8
+  },
+  {
+   "word": " guess",
+   "start": 139.8,
+   "end": 140.53
+  },
+  {
+   "word": " it",
+   "start": 140.53,
+   "end": 140.95
+  },
+  {
+   "word": " was",
+   "start": 140.95,
+   "end": 141.48
+  },
+  {
+   "word": " a",
+   "start": 141.48,
+   "end": 141.79
+  },
+  {
+   "word": " bad",
+   "start": 141.79,
+   "end": 142.31
+  },
+  {
+   "word": " sign",
+   "start": 142.31,
+   "end": 142.93
+  },
+  {
+   "word": " All",
+   "start": 178.91,
+   "end": 179.36
+  },
+  {
+   "word": " my",
+   "start": 179.36,
+   "end": 179.72
+  },
+  {
+   "word": " time",
+   "start": 179.72,
+   "end": 180.26
+  },
+  {
+   "word": " has",
+   "start": 180.26,
+   "end": 180.7
+  },
+  {
+   "word": " turned",
+   "start": 180.7,
+   "end": 181.42
+  },
+  {
+   "word": " to",
+   "start": 181.42,
+   "end": 181.78
+  },
+  {
+   "word": " day",
+   "start": 181.78,
+   "end": 182.23
+  },
+  {
+   "word": " All",
+   "start": 205.15,
+   "end": 205.73
+  },
+  {
+   "word": " my",
+   "start": 205.73,
+   "end": 206.19
+  },
+  {
+   "word": " bones",
+   "start": 206.19,
+   "end": 206.99
+  },
+  {
+   "word": " have",
+   "start": 206.99,
+   "end": 207.68
+  },
+  {
+   "word": " realigned",
+   "start": 207.68,
+   "end": 208.95
+  },
+  {
+   "word": " And",
+   "start": 208.95,
+   "end": 209.53
+  },
+  {
+   "word": " now",
+   "start": 209.53,
+   "end": 210.1
+  },
+  {
+   "word": " I",
+   "start": 210.1,
+   "end": 210.45
+  },
+  {
+   "word": " guess",
+   "start": 210.45,
+   "end": 211.19
+  },
+  {
+   "word": " it",
+   "start": 211.19,
+   "end": 211.61
+  },
+  {
+   "word": " was",
+   "start": 211.61,
+   "end": 212.13
+  },
+  {
+   "word": " a",
+   "start": 212.13,
+   "end": 212.45
+  },
+  {
+   "word": " bad",
+   "start": 212.45,
+   "end": 212.97
+  },
+  {
+   "word": " sign",
+   "start": 212.97,
+   "end": 213.6
+  },
+  {
+   "word": " And",
+   "start": 213.6,
+   "end": 214.13
+  },
+  {
+   "word": " now",
+   "start": 214.13,
+   "end": 214.65
+  },
+  {
+   "word": " I",
+   "start": 214.65,
+   "end": 214.97
+  },
+  {
+   "word": " guess",
+   "start": 214.97,
+   "end": 215.71
+  },
+  {
+   "word": " it",
+   "start": 215.71,
+   "end": 216.13
+  },
+  {
+   "word": " was",
+   "start": 216.13,
+   "end": 216.66
+  },
+  {
+   "word": " a",
+   "start": 216.66,
+   "end": 216.98
+  },
+  {
+   "word": " bad",
+   "start": 216.98,
+   "end": 217.51
+  },
+  {
+   "word": " sign",
+   "start": 217.51,
+   "end": 218.14
+  },
+  {
+   "word": " And",
+   "start": 218.14,
+   "end": 218.67
+  },
+  {
+   "word": " now",
+   "start": 218.67,
+   "end": 219.04
+  },
+  {
+   "word": " I",
+   "start": 219.04,
+   "end": 219.27
+  },
+  {
+   "word": " guess",
+   "start": 219.27,
+   "end": 219.79
+  },
+  {
+   "word": " it",
+   "start": 219.79,
+   "end": 220.09
+  },
+  {
+   "word": " was",
+   "start": 220.09,
+   "end": 220.46
+  },
+  {
+   "word": " a",
+   "start": 220.46,
+   "end": 220.69
+  },
+  {
+   "word": " bad",
+   "start": 220.69,
+   "end": 221.06
+  },
+  {
+   "word": " sign",
+   "start": 221.06,
+   "end": 221.51
+  }
+ ]
+}

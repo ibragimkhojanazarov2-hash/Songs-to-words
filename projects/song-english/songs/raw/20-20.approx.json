@@ -1,0 +1,851 @@
+{
+ "note": "NOT a Whisper answer: word times estimated from the old line times in songs/20-20.json. Replace with songs/raw/20-20.whisper.json (python3 align_lyrics.py 20-20 --transcribe).",
+ "text": "I took a wrong turn a thousand miles back But I let it go so long ago of the mind. Should've known where I was going And I should know where I am It's a different place, a different face, a different name, but somehow all the same. It's like a lost and found And when I turn around, it's 2020. Well the fog was wrapped around me Settled in for years Now the day has pushed it all away The line is getting clear So I followed all the breadcrumbs Oh, and I tried to find the track But I can't return, that bridge was burned The first time I went past, but I keep looking back Like lost and found When I turn around It's 2020 Don't regret what hasn't happened I wonder what It's only memories I'll never see, and places I won't go in curiosity. Like a lost and found When I turn around It's 2020 If I knew it then Run again It's 2020.",
+ "words": [
+  {
+   "word": " I",
+   "start": 4.18,
+   "end": 4.49
+  },
+  {
+   "word": " took",
+   "start": 4.49,
+   "end": 5.1
+  },
+  {
+   "word": " a",
+   "start": 5.1,
+   "end": 5.4
+  },
+  {
+   "word": " wrong",
+   "start": 5.4,
+   "end": 6.11
+  },
+  {
+   "word": " turn",
+   "start": 6.11,
+   "end": 6.72
+  },
+  {
+   "word": " a",
+   "start": 6.72,
+   "end": 7.03
+  },
+  {
+   "word": " thousand",
+   "start": 7.03,
+   "end": 8.05
+  },
+  {
+   "word": " miles",
+   "start": 8.05,
+   "end": 8.76
+  },
+  {
+   "word": " back",
+   "start": 8.76,
+   "end": 9.26
+  },
+  {
+   "word": " But",
+   "start": 14.7,
+   "end": 15.1
+  },
+  {
+   "word": " I",
+   "start": 15.1,
+   "end": 15.34
+  },
+  {
+   "word": " let",
+   "start": 15.34,
+   "end": 15.75
+  },
+  {
+   "word": " it",
+   "start": 15.75,
+   "end": 16.07
+  },
+  {
+   "word": " go",
+   "start": 16.07,
+   "end": 16.39
+  },
+  {
+   "word": " so",
+   "start": 16.39,
+   "end": 16.71
+  },
+  {
+   "word": " long",
+   "start": 16.71,
+   "end": 17.2
+  },
+  {
+   "word": " ago",
+   "start": 17.2,
+   "end": 17.6
+  },
+  {
+   "word": " of",
+   "start": 22.31,
+   "end": 22.48
+  },
+  {
+   "word": " the",
+   "start": 22.48,
+   "end": 22.7
+  },
+  {
+   "word": " mind.",
+   "start": 22.7,
+   "end": 23.01
+  },
+  {
+   "word": " Should've",
+   "start": 28.13,
+   "end": 28.77
+  },
+  {
+   "word": " known",
+   "start": 28.77,
+   "end": 29.17
+  },
+  {
+   "word": " where",
+   "start": 29.17,
+   "end": 29.58
+  },
+  {
+   "word": " I",
+   "start": 29.58,
+   "end": 29.75
+  },
+  {
+   "word": " was",
+   "start": 29.75,
+   "end": 30.04
+  },
+  {
+   "word": " going",
+   "start": 30.04,
+   "end": 30.45
+  },
+  {
+   "word": " And",
+   "start": 34.32,
+   "end": 34.88
+  },
+  {
+   "word": " I",
+   "start": 34.88,
+   "end": 35.21
+  },
+  {
+   "word": " should",
+   "start": 35.21,
+   "end": 36.11
+  },
+  {
+   "word": " know",
+   "start": 36.11,
+   "end": 36.78
+  },
+  {
+   "word": " where",
+   "start": 36.78,
+   "end": 37.56
+  },
+  {
+   "word": " I",
+   "start": 37.56,
+   "end": 37.89
+  },
+  {
+   "word": " am",
+   "start": 37.89,
+   "end": 38.34
+  },
+  {
+   "word": " It's",
+   "start": 38.34,
+   "end": 39.01
+  },
+  {
+   "word": " a",
+   "start": 39.01,
+   "end": 39.18
+  },
+  {
+   "word": " different",
+   "start": 39.18,
+   "end": 39.82
+  },
+  {
+   "word": " place,",
+   "start": 39.82,
+   "end": 40.28
+  },
+  {
+   "word": " a",
+   "start": 40.28,
+   "end": 40.45
+  },
+  {
+   "word": " different",
+   "start": 40.45,
+   "end": 41.08
+  },
+  {
+   "word": " face,",
+   "start": 41.08,
+   "end": 41.48
+  },
+  {
+   "word": " a",
+   "start": 41.48,
+   "end": 41.66
+  },
+  {
+   "word": " different",
+   "start": 41.66,
+   "end": 42.29
+  },
+  {
+   "word": " name,",
+   "start": 42.29,
+   "end": 43.06
+  },
+  {
+   "word": " but",
+   "start": 43.06,
+   "end": 43.62
+  },
+  {
+   "word": " somehow",
+   "start": 43.62,
+   "end": 44.61
+  },
+  {
+   "word": " all",
+   "start": 44.61,
+   "end": 45.16
+  },
+  {
+   "word": " the",
+   "start": 45.16,
+   "end": 45.72
+  },
+  {
+   "word": " same.",
+   "start": 45.72,
+   "end": 46.49
+  },
+  {
+   "word": " It's",
+   "start": 50.69,
+   "end": 51.35
+  },
+  {
+   "word": " like",
+   "start": 51.35,
+   "end": 52.0
+  },
+  {
+   "word": " a",
+   "start": 52.0,
+   "end": 52.33
+  },
+  {
+   "word": " lost",
+   "start": 52.33,
+   "end": 52.99
+  },
+  {
+   "word": " and",
+   "start": 52.99,
+   "end": 53.53
+  },
+  {
+   "word": " found",
+   "start": 53.53,
+   "end": 54.3
+  },
+  {
+   "word": " And",
+   "start": 54.3,
+   "end": 54.84
+  },
+  {
+   "word": " when",
+   "start": 54.84,
+   "end": 55.5
+  },
+  {
+   "word": " I",
+   "start": 55.5,
+   "end": 55.95
+  },
+  {
+   "word": " turn",
+   "start": 55.95,
+   "end": 56.84
+  },
+  {
+   "word": " around,",
+   "start": 56.84,
+   "end": 58.17
+  },
+  {
+   "word": " it's",
+   "start": 58.17,
+   "end": 59.06
+  },
+  {
+   "word": " 2020.",
+   "start": 59.06,
+   "end": 60.1
+  },
+  {
+   "word": " Well",
+   "start": 67.19,
+   "end": 67.52
+  },
+  {
+   "word": " the",
+   "start": 67.52,
+   "end": 67.79
+  },
+  {
+   "word": " fog",
+   "start": 67.79,
+   "end": 68.07
+  },
+  {
+   "word": " was",
+   "start": 68.07,
+   "end": 68.34
+  },
+  {
+   "word": " wrapped",
+   "start": 68.34,
+   "end": 68.83
+  },
+  {
+   "word": " around",
+   "start": 68.83,
+   "end": 69.27
+  },
+  {
+   "word": " me",
+   "start": 69.27,
+   "end": 69.49
+  },
+  {
+   "word": " Settled",
+   "start": 73.47,
+   "end": 74.53
+  },
+  {
+   "word": " in",
+   "start": 74.53,
+   "end": 75.0
+  },
+  {
+   "word": " for",
+   "start": 75.0,
+   "end": 75.59
+  },
+  {
+   "word": " years",
+   "start": 75.59,
+   "end": 76.42
+  },
+  {
+   "word": " Now",
+   "start": 76.42,
+   "end": 77.01
+  },
+  {
+   "word": " the",
+   "start": 77.01,
+   "end": 77.6
+  },
+  {
+   "word": " day",
+   "start": 77.6,
+   "end": 78.19
+  },
+  {
+   "word": " has",
+   "start": 78.19,
+   "end": 78.78
+  },
+  {
+   "word": " pushed",
+   "start": 78.78,
+   "end": 80.13
+  },
+  {
+   "word": " it",
+   "start": 80.13,
+   "end": 80.81
+  },
+  {
+   "word": " all",
+   "start": 80.81,
+   "end": 81.65
+  },
+  {
+   "word": " away",
+   "start": 81.65,
+   "end": 82.66
+  },
+  {
+   "word": " The",
+   "start": 82.66,
+   "end": 83.51
+  },
+  {
+   "word": " line",
+   "start": 83.51,
+   "end": 84.52
+  },
+  {
+   "word": " is",
+   "start": 84.52,
+   "end": 84.83
+  },
+  {
+   "word": " getting",
+   "start": 84.83,
+   "end": 85.52
+  },
+  {
+   "word": " clear",
+   "start": 85.52,
+   "end": 86.06
+  },
+  {
+   "word": " So",
+   "start": 90.97,
+   "end": 91.36
+  },
+  {
+   "word": " I",
+   "start": 91.36,
+   "end": 91.65
+  },
+  {
+   "word": " followed",
+   "start": 91.65,
+   "end": 92.62
+  },
+  {
+   "word": " all",
+   "start": 92.62,
+   "end": 93.1
+  },
+  {
+   "word": " the",
+   "start": 93.1,
+   "end": 93.58
+  },
+  {
+   "word": " breadcrumbs",
+   "start": 93.58,
+   "end": 94.84
+  },
+  {
+   "word": " Oh,",
+   "start": 94.84,
+   "end": 95.33
+  },
+  {
+   "word": " and",
+   "start": 95.33,
+   "end": 95.81
+  },
+  {
+   "word": " I",
+   "start": 95.81,
+   "end": 96.3
+  },
+  {
+   "word": " tried",
+   "start": 96.3,
+   "end": 97.43
+  },
+  {
+   "word": " to",
+   "start": 97.43,
+   "end": 98.08
+  },
+  {
+   "word": " find",
+   "start": 98.08,
+   "end": 99.05
+  },
+  {
+   "word": " the",
+   "start": 99.05,
+   "end": 99.86
+  },
+  {
+   "word": " track",
+   "start": 99.86,
+   "end": 100.99
+  },
+  {
+   "word": " But",
+   "start": 100.99,
+   "end": 101.8
+  },
+  {
+   "word": " I",
+   "start": 101.8,
+   "end": 101.99
+  },
+  {
+   "word": " can't",
+   "start": 101.99,
+   "end": 102.42
+  },
+  {
+   "word": " return,",
+   "start": 102.42,
+   "end": 102.98
+  },
+  {
+   "word": " that",
+   "start": 102.98,
+   "end": 103.35
+  },
+  {
+   "word": " bridge",
+   "start": 103.35,
+   "end": 103.84
+  },
+  {
+   "word": " was",
+   "start": 103.84,
+   "end": 104.15
+  },
+  {
+   "word": " burned",
+   "start": 104.15,
+   "end": 104.65
+  },
+  {
+   "word": " The",
+   "start": 104.65,
+   "end": 104.96
+  },
+  {
+   "word": " first",
+   "start": 104.96,
+   "end": 105.38
+  },
+  {
+   "word": " time",
+   "start": 105.38,
+   "end": 105.75
+  },
+  {
+   "word": " I",
+   "start": 105.75,
+   "end": 105.93
+  },
+  {
+   "word": " went",
+   "start": 105.93,
+   "end": 106.29
+  },
+  {
+   "word": " past,",
+   "start": 106.29,
+   "end": 106.71
+  },
+  {
+   "word": " but",
+   "start": 106.71,
+   "end": 107.02
+  },
+  {
+   "word": " I",
+   "start": 107.02,
+   "end": 107.2
+  },
+  {
+   "word": " keep",
+   "start": 107.2,
+   "end": 107.56
+  },
+  {
+   "word": " looking",
+   "start": 107.56,
+   "end": 109.67
+  },
+  {
+   "word": " back",
+   "start": 109.67,
+   "end": 111.08
+  },
+  {
+   "word": " Like",
+   "start": 113.67,
+   "end": 114.52
+  },
+  {
+   "word": " lost",
+   "start": 114.52,
+   "end": 115.37
+  },
+  {
+   "word": " and",
+   "start": 115.37,
+   "end": 116.08
+  },
+  {
+   "word": " found",
+   "start": 116.08,
+   "end": 117.08
+  },
+  {
+   "word": " When",
+   "start": 117.08,
+   "end": 117.93
+  },
+  {
+   "word": " I",
+   "start": 117.93,
+   "end": 118.36
+  },
+  {
+   "word": " turn",
+   "start": 118.36,
+   "end": 119.21
+  },
+  {
+   "word": " around",
+   "start": 119.21,
+   "end": 120.59
+  },
+  {
+   "word": " It's",
+   "start": 120.59,
+   "end": 121.63
+  },
+  {
+   "word": " 2020",
+   "start": 121.63,
+   "end": 122.67
+  },
+  {
+   "word": " Don't",
+   "start": 148.26,
+   "end": 148.61
+  },
+  {
+   "word": " regret",
+   "start": 148.61,
+   "end": 149.01
+  },
+  {
+   "word": " what",
+   "start": 149.01,
+   "end": 149.3
+  },
+  {
+   "word": " hasn't",
+   "start": 149.3,
+   "end": 149.7
+  },
+  {
+   "word": " happened",
+   "start": 149.7,
+   "end": 150.2
+  },
+  {
+   "word": " I",
+   "start": 154.64,
+   "end": 155.04
+  },
+  {
+   "word": " wonder",
+   "start": 155.04,
+   "end": 156.09
+  },
+  {
+   "word": " what",
+   "start": 156.09,
+   "end": 156.88
+  },
+  {
+   "word": " It's",
+   "start": 156.88,
+   "end": 157.67
+  },
+  {
+   "word": " only",
+   "start": 157.67,
+   "end": 158.46
+  },
+  {
+   "word": " memories",
+   "start": 158.46,
+   "end": 159.78
+  },
+  {
+   "word": " I'll",
+   "start": 159.78,
+   "end": 160.57
+  },
+  {
+   "word": " never",
+   "start": 160.57,
+   "end": 161.12
+  },
+  {
+   "word": " see,",
+   "start": 161.12,
+   "end": 161.59
+  },
+  {
+   "word": " and",
+   "start": 161.59,
+   "end": 161.99
+  },
+  {
+   "word": " places",
+   "start": 161.99,
+   "end": 162.61
+  },
+  {
+   "word": " I",
+   "start": 162.61,
+   "end": 162.85
+  },
+  {
+   "word": " won't",
+   "start": 162.85,
+   "end": 163.4
+  },
+  {
+   "word": " go",
+   "start": 163.4,
+   "end": 163.72
+  },
+  {
+   "word": " in",
+   "start": 163.72,
+   "end": 164.03
+  },
+  {
+   "word": " curiosity.",
+   "start": 164.03,
+   "end": 165.07
+  },
+  {
+   "word": " Like",
+   "start": 170.69,
+   "end": 171.49
+  },
+  {
+   "word": " a",
+   "start": 171.49,
+   "end": 171.9
+  },
+  {
+   "word": " lost",
+   "start": 171.9,
+   "end": 172.7
+  },
+  {
+   "word": " and",
+   "start": 172.7,
+   "end": 173.37
+  },
+  {
+   "word": " found",
+   "start": 173.37,
+   "end": 174.31
+  },
+  {
+   "word": " When",
+   "start": 174.31,
+   "end": 175.11
+  },
+  {
+   "word": " I",
+   "start": 175.11,
+   "end": 175.52
+  },
+  {
+   "word": " turn",
+   "start": 175.52,
+   "end": 176.32
+  },
+  {
+   "word": " around",
+   "start": 176.32,
+   "end": 177.78
+  },
+  {
+   "word": " It's",
+   "start": 177.78,
+   "end": 178.88
+  },
+  {
+   "word": " 2020",
+   "start": 178.88,
+   "end": 179.98
+  },
+  {
+   "word": " If",
+   "start": 185.79,
+   "end": 186.58
+  },
+  {
+   "word": " I",
+   "start": 186.58,
+   "end": 187.17
+  },
+  {
+   "word": " knew",
+   "start": 187.17,
+   "end": 188.35
+  },
+  {
+   "word": " it",
+   "start": 188.35,
+   "end": 189.14
+  },
+  {
+   "word": " then",
+   "start": 189.14,
+   "end": 190.32
+  },
+  {
+   "word": " Run",
+   "start": 190.32,
+   "end": 191.31
+  },
+  {
+   "word": " again",
+   "start": 191.31,
+   "end": 192.56
+  },
+  {
+   "word": " It's",
+   "start": 192.56,
+   "end": 193.64
+  },
+  {
+   "word": " 2020.",
+   "start": 193.64,
+   "end": 194.89
+  }
+ ]
+}

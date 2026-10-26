@@ -13,48 +13,46 @@
   },
   {
    "start": 16.94,
-   "end": 20.36,
-   "text": "I was laying on the floor when you"
+   "end": 21.25,
+   "text": "I was laying on the floor when you were gone",
+   "verse": true
   },
   {
-   "start": 20.36,
-   "end": 23.91,
-   "text": "were gone like it was something i could"
+   "start": 21.25,
+   "end": 24.92,
+   "text": "Like it was something I could die from"
   },
   {
-   "start": 23.91,
-   "end": 28.61,
-   "text": "die from now my headaches and your friends"
+   "start": 24.92,
+   "end": 30.24,
+   "text": "Now my headaches and your friends all think I'm dumb",
+   "check": true
   },
   {
-   "start": 28.61,
-   "end": 31.87,
-   "text": "all think i'm dumb you said it's just"
+   "start": 30.24,
+   "end": 34.04,
+   "text": "You said it's just a bit of bad blood"
   },
   {
-   "start": 31.87,
-   "end": 35.31,
-   "text": "a bit of bad blood now i feel"
+   "start": 34.04,
+   "end": 39.55,
+   "text": "Now I feel great, but it doesn't bother me",
+   "check": true
   },
   {
-   "start": 35.31,
-   "end": 40.69,
-   "text": "great but it doesn't bother me Cause I"
+   "start": 39.55,
+   "end": 42.92,
+   "text": "'Cause I don't have the energy"
   },
   {
-   "start": 40.69,
-   "end": 44.55,
-   "text": "don't have the energy And the x -ray"
+   "start": 42.92,
+   "end": 47.86,
+   "text": "And the x-ray doesn't tell me a thing"
   },
   {
-   "start": 45.23,
-   "end": 49.31,
-   "text": "Doesn't tell me a thing Show me what"
-  },
-  {
-   "start": 49.31,
+   "start": 47.86,
    "end": 51.05,
-   "text": "the hell you see in me"
+   "text": "Show me what the hell you see in me"
   },
   {
    "start": 51.05,
@@ -63,13 +61,15 @@
   },
   {
    "start": 63.65,
-   "end": 67.62,
-   "text": "You're lying Now I guess it was a"
+   "end": 65.07,
+   "text": "You're lying",
+   "verse": true,
+   "check": true
   },
   {
-   "start": 67.62,
+   "start": 65.07,
    "end": 68.64,
-   "text": "bad sign"
+   "text": "Now I guess it was a bad sign"
   },
   {
    "start": 68.64,
@@ -78,43 +78,50 @@
   },
   {
    "start": 86.73,
-   "end": 90.43,
-   "text": "I was praying to the Lord for some"
+   "end": 90.92,
+   "text": "I was praying to the Lord for some fun",
+   "verse": true,
+   "check": true
   },
   {
-   "start": 90.43,
+   "start": 90.92,
    "end": 94.91,
-   "text": "fun Boy, I guess you didn't have some"
+   "text": "Boy, I guess you didn't have some",
+   "check": true
   },
   {
    "start": 95.49,
-   "end": 101.45,
-   "text": "I'm betraying everything that I've become Just to"
+   "end": 100.42,
+   "text": "I'm betraying everything that I've become"
   },
   {
-   "start": 101.45,
-   "end": 104.67,
-   "text": "prove it wasn't true, I know If I'm"
+   "start": 100.42,
+   "end": 104.01,
+   "text": "Just to prove it wasn't true, I know",
+   "check": true
   },
   {
-   "start": 104.67,
-   "end": 109.94,
-   "text": "too late, we come and hurry me Like"
+   "start": 104.01,
+   "end": 109.22,
+   "text": "If I'm too late, we come and hurry me",
+   "check": true
   },
   {
-   "start": 109.94,
-   "end": 113.46,
-   "text": "a kid among the dying leaves If my"
+   "start": 109.22,
+   "end": 112.81,
+   "text": "Like a kid among the dying leaves"
   },
   {
-   "start": 113.46,
-   "end": 118.3,
-   "text": "heart breaks We drug and care mean When"
+   "start": 112.81,
+   "end": 117.7,
+   "text": "If my heart breaks, we drug and care mean",
+   "check": true
   },
   {
-   "start": 118.3,
+   "start": 117.7,
    "end": 122.82,
-   "text": "we can talk about our chemistry I'm ready."
+   "text": "When we can talk about our chemistry, I'm ready",
+   "check": true
   },
   {
    "start": 122.82,
@@ -123,18 +130,14 @@
   },
   {
    "start": 133.97,
-   "end": 137.81,
-   "text": "And now I guess it was a bad"
+   "end": 138.44,
+   "text": "And now I guess it was a bad sign",
+   "verse": true
   },
   {
-   "start": 137.81,
-   "end": 141.79,
-   "text": "sign And now I guess it was a"
-  },
-  {
-   "start": 141.79,
+   "start": 138.44,
    "end": 142.93,
-   "text": "bad sign"
+   "text": "And now I guess it was a bad sign"
   },
   {
    "start": 142.93,
@@ -144,7 +147,9 @@
   {
    "start": 178.91,
    "end": 182.23,
-   "text": "All my time has turned to day"
+   "text": "All my time has turned to day",
+   "verse": true,
+   "check": true
   },
   {
    "start": 182.23,
@@ -153,23 +158,30 @@
   },
   {
    "start": 205.15,
-   "end": 210.45,
-   "text": "All my bones have realigned And now I"
+   "end": 208.95,
+   "text": "All my bones have realigned",
+   "verse": true
   },
   {
-   "start": 210.45,
-   "end": 214.65,
-   "text": "guess it was a bad sign And now"
+   "start": 208.95,
+   "end": 213.6,
+   "text": "And now I guess it was a bad sign"
   },
   {
-   "start": 214.65,
-   "end": 218.67,
-   "text": "I guess it was a bad sign And"
+   "start": 213.6,
+   "end": 218.14,
+   "text": "And now I guess it was a bad sign"
   },
   {
-   "start": 218.67,
+   "start": 218.14,
    "end": 221.51,
-   "text": "now I guess it was a bad sign"
+   "text": "And now I guess it was a bad sign"
+  },
+  {
+   "start": 221.51,
+   "end": 232.2,
+   "text": "♪"
   }
- ]
+ ],
+ "lyricsSource": "draft from Whisper (old songs/bad-sign.json) - no official lyrics reachable yet (try bradsucks.net). CHECK BY EAR."
 }

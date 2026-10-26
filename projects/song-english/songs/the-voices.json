@@ -14,7 +14,9 @@
   {
    "start": 17.21,
    "end": 22.36,
-   "text": "Oh Voices never speak, and all night"
+   "text": "Oh, voices never speak, and all night",
+   "verse": true,
+   "check": true
   },
   {
    "start": 23.58,
@@ -24,22 +26,23 @@
   {
    "start": 27.02,
    "end": 30.58,
-   "text": "And oh, they're on the fleeting little whispers"
+   "text": "And oh, they're on the fleeting little whispers",
+   "check": true
   },
   {
    "start": 30.66,
-   "end": 32.94,
-   "text": "And the creeping little shivers And they're sleeping"
+   "end": 32.04,
+   "text": "And the creeping little shivers"
   },
   {
-   "start": 32.94,
-   "end": 37.7,
-   "text": "till the sun burns out Then they're gonna"
+   "start": 32.04,
+   "end": 35.61,
+   "text": "And they're sleeping till the sun burns out"
   },
   {
-   "start": 37.7,
+   "start": 35.61,
    "end": 40.68,
-   "text": "scream and shout"
+   "text": "Then they're gonna scream and shout"
   },
   {
    "start": 40.68,
@@ -49,47 +52,45 @@
   {
    "start": 55.01,
    "end": 60.29,
-   "text": "Hold your breath and count to ten"
+   "text": "Hold your breath and count to ten",
+   "verse": true
   },
   {
    "start": 60.63,
-   "end": 65.12,
-   "text": "Remember that it's all in your head If"
+   "end": 64.74,
+   "text": "Remember that it's all in your head"
   },
   {
-   "start": 65.12,
-   "end": 68.18,
-   "text": "you let them in, they'll breed and spread,"
+   "start": 64.74,
+   "end": 68.83,
+   "text": "If you let them in, they'll breed and spread, and oh"
   },
   {
-   "start": 68.18,
+   "start": 68.83,
    "end": 71.78,
-   "text": "and oh Gotta take them, gotta break them,"
+   "text": "Gotta take them, gotta break them"
   },
   {
    "start": 71.78,
-   "end": 74.18,
-   "text": "gotta shake them, gotta make them Even stutter"
+   "end": 73.53,
+   "text": "Gotta shake them, gotta make them"
   },
   {
-   "start": 74.18,
-   "end": 79.57,
-   "text": "till they're all burned out You gotta drive"
+   "start": 73.53,
+   "end": 77.6,
+   "text": "Even stutter till they're all burned out",
+   "check": true
   },
   {
-   "start": 79.57,
+   "start": 77.6,
    "end": 81.55,
-   "text": "them out"
+   "text": "You gotta drive them out"
   },
   {
    "start": 81.55,
-   "end": 167.92,
+   "end": 200.75,
    "text": "♪"
-  },
-  {
-   "start": 167.92,
-   "end": 168.4,
-   "text": "We'll be right back."
   }
- ]
+ ],
+ "lyricsSource": "draft from Whisper (old songs/the-voices.json) - no official lyrics reachable yet (try joshwoodward.com). CHECK BY EAR."
 }
